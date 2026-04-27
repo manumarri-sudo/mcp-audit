@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Fraunces, JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
-import { StreamingBytes } from "./components/StreamingBytes";
 
 const sans = Inter({ subsets: ["latin"], variable: "--inter", display: "swap" });
 const serif = Fraunces({
@@ -28,7 +27,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable} ${mono.variable}`}>
       <body>
-        <StreamingBytes />
         <nav className="nav">
           <Link href="/" className="nav-brand">
             mcp-audit
