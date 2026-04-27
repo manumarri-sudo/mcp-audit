@@ -10,7 +10,6 @@ const serif = Fraunces({
   variable: "--serif-font",
   display: "swap",
   weight: ["400", "500", "600"],
-  axes: ["SOFT", "WONK"],
 });
 const mono = JetBrains_Mono({
   subsets: ["latin"],
