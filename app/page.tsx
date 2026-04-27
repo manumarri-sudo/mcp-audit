@@ -140,12 +140,8 @@ export default function HomePage() {
         {EXAMPLES.map((ex) => (
           <button
             key={ex.id}
+            className={activeExampleId === ex.id ? "active" : ""}
             onClick={() => pickExample(ex)}
-            style={{
-              ...(activeExampleId === ex.id
-                ? { borderColor: "var(--accent)", color: "var(--accent)", fontWeight: 600 }
-                : {}),
-            }}
           >
             {ex.label}
           </button>

@@ -121,11 +121,11 @@ export default function DemoPage() {
 
       <div className="diff-grid">
         <div>
-          <div className="diff-pane-label">What you see</div>
-          <div className="diff-pane">{input}</div>
+          <div className="diff-pane-label visible-label">What you see</div>
+          <div className="diff-pane eyes">{input}</div>
         </div>
         <div>
-          <div className="diff-pane-label">What the model sees</div>
+          <div className="diff-pane-label hidden-label">What the model sees</div>
           <div className="diff-pane">
             {data ? renderHighlighted(input, data.hidden) : input}
           </div>

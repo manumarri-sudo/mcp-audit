@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, Source_Serif_4, JetBrains_Mono } from "next/font/google";
+import { Inter, Fraunces, JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import { StreamingBytes } from "./components/StreamingBytes";
 
 const sans = Inter({ subsets: ["latin"], variable: "--inter", display: "swap" });
-const serif = Source_Serif_4({
+const serif = Fraunces({
   subsets: ["latin"],
   variable: "--serif-font",
   display: "swap",
+  weight: ["400", "500", "600"],
+  axes: ["SOFT", "WONK"],
 });
 const mono = JetBrains_Mono({
   subsets: ["latin"],
@@ -26,13 +29,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${sans.variable} ${serif.variable} ${mono.variable}`}>
       <body>
+        <StreamingBytes />
         <nav className="nav">
           <Link href="/" className="nav-brand">
-            MCP Audit
+            mcp-audit
           </Link>
           <div className="nav-links">
-            <Link href="/demo">Bytes vs Eyes</Link>
-            <Link href="/methodology">Methodology</Link>
+            <Link href="/demo">bytes/eyes</Link>
+            <Link href="/methodology">methodology</Link>
           </div>
         </nav>
         {children}
