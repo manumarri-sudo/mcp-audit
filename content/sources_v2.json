@@ -1,0 +1,3477 @@
+[
+  {
+    "claim_id": "COMP-001",
+    "claim_text": "Snyk Agent Scan is an open source CLI that auto-discovers local agent configurations (Claude, Cursor, Windsurf, Gemini CLI), connects to MCP servers, and detects 15+ risk categories including prompt injection, tool poisoning, tool shadowing, toxic flows, and malware payloads in agent skills.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/snyk/agent-scan",
+        "title": "Snyk Agent Scan",
+        "publisher": "Snyk Agent Scan",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Security scanner for AI agents, MCP servers and agent skills.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Snyk Agent Scan claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-002",
+    "claim_text": "Snyk Agent Scan's documented issue codes (E001-E006, W001-W020) include only 'Suspicious words in tool description' (W001) for description content scanning. There is no issue code for hidden Unicode bytes, zero-width characters, homoglyphs, agent commandeering imperatives, or forward references.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/snyk/agent-scan/blob/main/docs/issue-codes.md",
+        "title": "Snyk Agent Scan",
+        "publisher": "Snyk Agent Scan",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "W001 (low) - Suspicious words in tool description",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Snyk Agent Scan claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-003",
+    "claim_text": "Snyk Agent Scan is Apache-2.0 licensed and free to use, but requires a Snyk API token from a Snyk account. Snyk's broader platform is freemium with paid tiers; Agent Scan basic functionality is gated only by a free Snyk account.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/snyk/agent-scan",
+        "title": "Snyk Agent Scan",
+        "publisher": "Snyk Agent Scan",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Apache-2.0 license",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Snyk Agent Scan claim_type=license_pricing tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-004",
+    "claim_text": "Snyk Agent Scan is actively maintained. Latest release v0.4.18 on April 23, 2026, with 71 total releases and 478 commits on main.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/snyk/agent-scan/blob/main/CHANGELOG.md",
+        "title": "Snyk Agent Scan",
+        "publisher": "Snyk Agent Scan",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "v0.4.18",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Snyk Agent Scan claim_type=vendor_activity tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-005",
+    "claim_text": "Invariant Labs MCP-Scan is open source and operates in two modes: Scan Mode (static scanning of installed servers for malicious tool descriptions) and Proxy Mode (continuous runtime monitoring). It is the canonical Tool Poisoning Attack scanner since Invariant coined the term April 1, 2025.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://invariantlabs.ai/blog/introducing-mcp-scan",
+        "title": "Invariant Labs MCP-Scan",
+        "publisher": "Invariant Labs MCP-Scan",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "MCP-Scan is a security scanning tool to both statically and dynamically scan and monitor your MCP connections, and it checks them for common security vulnerabilities like prompt injections, tool poisoning and toxic flows.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Invariant Labs MCP-Scan claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-006",
+    "claim_text": "Invariant Labs MCP-Scan documentation does not mention detection of hidden Unicode characters, zero-width characters, homoglyph mixes, agent commandeering imperatives, or forward references. It uses tool hashing to detect rug-pull changes between versions but does not perform full-corpus or byte-level Unicode analysis.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/invariantlabs-ai/mcp-scan",
+        "title": "Invariant Labs MCP-Scan",
+        "publisher": "Invariant Labs MCP-Scan",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Statically scans all your installed servers for malicious tool descriptions and tools, such as tool poisoning attacks, cross-origin escalation, and rug pull attacks",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Invariant Labs MCP-Scan claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-007",
+    "claim_text": "MCP-Scan is open source. Invariant Labs offers a separate commercial product called Invariant Guardrails for broader security coverage; pricing is not public.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://invariantlabs.ai/blog/introducing-mcp-scan",
+        "title": "Invariant Labs MCP-Scan",
+        "publisher": "Invariant Labs MCP-Scan",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "MCP-Scan is open source, and welcomes contributions",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Invariant Labs MCP-Scan claim_type=license_pricing tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-008",
+    "claim_text": "Promptfoo is an open-source LLM eval and red teaming framework with explicit MCP testing scenarios: natural language attacks via trusted client, direct MCP protocol testing, and agent behavior testing. It tests for tool poisoning, sensitive data exfiltration, authentication hijacking, rug pulls, tool shadowing, and cross-server attacks.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.promptfoo.dev/docs/red-team/mcp-security-testing/",
+        "title": "Promptfoo",
+        "publisher": "Promptfoo",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Tool poisoning attacks via hidden instructions in tool descriptions",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Promptfoo claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-009",
+    "claim_text": "Promptfoo's MCP red team docs do not explicitly reference detection of hidden Unicode characters, zero-width characters, homoglyphs, or agent commandeering imperatives. It is fundamentally a runtime/behavioral red team rather than a static description-byte scanner.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.promptfoo.dev/docs/red-team/mcp-security-testing/",
+        "title": "Promptfoo",
+        "publisher": "Promptfoo",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "the disconnect between what users see and what AI models process",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Promptfoo claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-010",
+    "claim_text": "Promptfoo Community is free forever with 10k red team probes/month, all eval features, and vulnerability scanning. Enterprise and On-Premise tiers have custom pricing.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.promptfoo.dev/pricing/",
+        "title": "Promptfoo",
+        "publisher": "Promptfoo",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Free Forever",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Promptfoo claim_type=license_pricing tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-011",
+    "claim_text": "Lakera Guard is a runtime AI Application Firewall providing real-time inspection of inputs and outputs for direct prompt injection, indirect prompt injection, jailbreaks, prompt extraction, PII, and secrets. It claims 98%+ detection at sub-50ms latency across 100+ languages.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.lakera.ai/lakera-guard",
+        "title": "Lakera Guard",
+        "publisher": "Lakera Guard",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Runtime security for your GenAI",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Lakera Guard claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-012",
+    "claim_text": "Lakera Guard is a runtime API firewall, not a static scanner. There is no documented capability for ingesting claude_desktop_config.json, scanning installed MCP server tool descriptions for hidden Unicode, or producing a one-shot pre-deployment risk score. Lakera Red is consulting-engagement red teaming, not a self-serve scan.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.lakera.ai/lakera-red",
+        "title": "Lakera Guard",
+        "publisher": "Lakera Guard",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "AI Red Teaming and Penetration Testing",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Lakera Guard claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-013",
+    "claim_text": "Lakera offers a free Community plan ($0/month, up to 10,000 API requests/month, 8k token prompts, EU SaaS, community support). Enterprise pricing is custom and not public. Lakera Red has no public pricing.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.eesel.ai/blog/lakera-pricing",
+        "title": "Lakera Guard",
+        "publisher": "Lakera Guard",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "vendor_doc",
+        "exact_quote": "free Community plan aimed at individual developers, researchers, and small teams. It costs $0 per month",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "INFERENCE"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Lakera Guard claim_type=license_pricing tag=INFERENCE"
+  },
+  {
+    "claim_id": "COMP-014",
+    "claim_text": "Pillar Security is an enterprise AI security platform covering AI Discovery & Posture, Red Teaming, Runtime Guardrails, and Governance & Compliance. It explicitly markets MCP & Tool Security including MCP allowlists, agent inventory of MCP servers, and MCP skill risk detection.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.pillar.security/platform",
+        "title": "Pillar Security",
+        "publisher": "Pillar Security",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "MCP & Tool Security",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Pillar Security claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-015",
+    "claim_text": "Pillar Security's platform page does not explicitly mention scanning tool descriptions for hidden Unicode, zero-width characters, or homoglyph mixes. The product is enterprise-sales-only with no public pricing or self-serve scan.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.pillar.security/platform",
+        "title": "Pillar Security",
+        "publisher": "Pillar Security",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Get a demo",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Pillar Security claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-016",
+    "claim_text": "Apex Security was a generative AI visibility, policy, and DLP platform for enterprise AI usage (ChatGPT, Gemini, Copilot, custom apps). It was acquired by Tenable and is being merged into Tenable AI Exposure for unified delivery in H2 2025.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.darkreading.com/cyber-risk/new-ai-security-startup-apex-secures-ai-models-apps",
+        "title": "Apex Security",
+        "publisher": "Apex Security",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Apex Security's platform gives security teams full visibility into their organizations' AI activity",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Apex Security claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-017",
+    "claim_text": "Tenable AI Exposure (post-Apex) page does not mention Model Context Protocol or tool description scanning. The product targets AI usage visibility, misconfiguration detection, and prompt-injection-attempt detection at the platform-usage level, not pre-deployment MCP server static audit.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.tenable.com/products/ai-exposure",
+        "title": "Apex Security / Tenable AI Exposure",
+        "publisher": "Apex Security / Tenable AI Exposure",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Know how your organization uses AI",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Apex Security / Tenable AI Exposure claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-018",
+    "claim_text": "Vanta AI is a compliance automation platform with AI-specific assessments mapped to NIST AI RMF, EU AI Act, and ISO 42001. It uses AI agents to draft policies, complete questionnaires, and flag inconsistencies between written policy and practice.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.vanta.com/products/ai",
+        "title": "Vanta AI",
+        "publisher": "Vanta AI",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Vanta AI Security Assessment questions are aligned to Vanta-supported AI compliance frameworks, including NIST AI RMF, EU AI Act and ISO 42001",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Vanta AI claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-019",
+    "claim_text": "Vanta AI does not perform byte-level technical scans of MCP servers, claude_desktop_config.json, or tool description bytes. It is governance and questionnaire automation, not a vulnerability scanner.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://www.vanta.com/products/ai",
+        "title": "Vanta AI",
+        "publisher": "Vanta AI",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "draft policies, complete questionnaires, and flag issues before they escalate",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Vanta AI claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-020",
+    "claim_text": "Drata AI is a GRC and Trust Management platform with agentic features for questionnaire response, Trust Center automation, evidence collection, and continuous compliance monitoring across AWS/Azure/GCP.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://drata.com/ai",
+        "title": "Drata AI",
+        "publisher": "Drata AI",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Drata AI embeds intelligence across compliance, risk, and assurance workflows",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Drata AI claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-021",
+    "claim_text": "Drata AI is a compliance/trust automation platform. It does not scan MCP servers or tool description bytes. No mention of MCP, tool poisoning, hidden Unicode, or agent runtime scanning in product documentation.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://drata.com/products",
+        "title": "Drata AI",
+        "publisher": "Drata AI",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Agentic Trust Management Platform",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Drata AI claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-022",
+    "claim_text": "MCP Inspector is the official developer tool for testing and debugging MCP servers. It lists tools with their descriptions and parameters and allows interactive invocation. Security focus is on proxy authentication, localhost binding, and DNS rebinding protection.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/modelcontextprotocol/inspector",
+        "title": "Anthropic MCP Inspector",
+        "publisher": "Anthropic MCP Inspector",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "The MCP Inspector proxy server requires authentication by default. When starting the server, a random session token is generated and printed to the console.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Anthropic MCP Inspector claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-023",
+    "claim_text": "MCP Inspector renders tool descriptions for human review but performs no validation of description content. It does not flag hidden Unicode bytes, zero-width characters, homoglyphs, agent commandeering imperatives, or forward references. The displayed description is the rendered glyphs only.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/modelcontextprotocol/inspector",
+        "title": "Anthropic MCP Inspector",
+        "publisher": "Anthropic MCP Inspector",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "The Inspector implements basic field presence checking, but relies on the MCP server for parameter validation according to its schema.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Anthropic MCP Inspector claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-024",
+    "claim_text": "MCP Inspector is MIT licensed and free. Latest release 0.21.2-hotfix-3, April 14, 2026.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/modelcontextprotocol/inspector",
+        "title": "Anthropic MCP Inspector",
+        "publisher": "Anthropic MCP Inspector",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "MIT License",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Anthropic MCP Inspector claim_type=license_pricing tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-025",
+    "claim_text": "Cloudflare offers MCP Server Portals (centralized OAuth 2.0 access, per-user logging, DLP-based shadow MCP detection) and plans to extend Firewall for AI to MCP traffic. Cloudflare's enterprise reference architecture also includes Code Mode for sandboxed tool execution.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://blog.cloudflare.com/zero-trust-mcp-server-portals/",
+        "title": "Cloudflare AI Gateway / MCP Server Portals",
+        "publisher": "Cloudflare AI Gateway / MCP Server Portals",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "MCP Server Portals enable you to centralize, secure, and observe every MCP connection in your organization.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Cloudflare AI Gateway / MCP Server Portals claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-026",
+    "claim_text": "Cloudflare's MCP security stack is at the network/access perimeter (OAuth, DLP, shadow detection) and does not perform static scanning of tool descriptions for hidden Unicode, homoglyphs, or commandeering imperatives. Firewall for AI integration with MCP is announced as planned, not shipped.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://blog.cloudflare.com/zero-trust-mcp-server-portals/",
+        "title": "Cloudflare AI Gateway / MCP Server Portals",
+        "publisher": "Cloudflare AI Gateway / MCP Server Portals",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Cloudflare plans to integrate with Firewall for AI, applying the power of their WAF to MCP traffic to detect and block prompt injection attacks.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Cloudflare AI Gateway / MCP Server Portals claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-027",
+    "claim_text": "MCP-Shield is an open-source MIT-licensed scanner for installed MCP servers that detects hidden instructions in tool descriptions, exfiltration channels, tool shadowing, sensitive file access, and cross-origin violations. Inspired by Invariant Labs research.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/riseandignite/mcp-shield",
+        "title": "MCP-Shield (riseandignite)",
+        "publisher": "MCP-Shield (riseandignite)",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Hidden instructions in tool descriptions, Potential data exfiltration channels, Tool shadowing and behavior modification, Sensitive file access attempts, Cross-origin violations between servers",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=MCP-Shield (riseandignite) claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-028",
+    "claim_text": "MCP-Shield does not document detection of hidden Unicode, zero-width characters, homoglyphs, or forward references. It catches 'hidden instructions' as visible text patterns (e.g., <IMPORTANT> tags), not byte-level steganography.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/riseandignite/mcp-shield",
+        "title": "MCP-Shield (riseandignite)",
+        "publisher": "MCP-Shield (riseandignite)",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Hidden instructions in tool descriptions",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=MCP-Shield (riseandignite) claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-029",
+    "claim_text": "MCP-Guard is an MIT-licensed open-source scanner with static analysis, dynamic testing, and intelligent fuzzing for Python, Node.js, Go, and Docker MCP servers. Implements CVSS v4.0 and AIVSS scoring. Targets command injection, path traversal, auth bypass, and parameter tampering.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/SaravanaGuhan/mcp-guard",
+        "title": "MCP-Guard (SaravanaGuhan)",
+        "publisher": "MCP-Guard (SaravanaGuhan)",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Comprehensive security scanner for Model Context Protocol (MCP) servers",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=MCP-Guard (SaravanaGuhan) claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-030",
+    "claim_text": "MCP-Guard focuses on traditional code-vuln categories. The README does not mention prompt injection, tool poisoning, hidden Unicode, homoglyphs, or commandeering imperatives. Last release v1.0.0 August 2025; appears semi-active.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/SaravanaGuhan/mcp-guard",
+        "title": "MCP-Guard (SaravanaGuhan)",
+        "publisher": "MCP-Guard (SaravanaGuhan)",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Command injection, path traversal, auth bypass",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=MCP-Guard (SaravanaGuhan) claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-031",
+    "claim_text": "Cisco AI Defense's open-source MCP Scanner (Apache 2.0) is the most comprehensive open scanner. Uses YARA rules, LLM-as-judge, and the Cisco AI Defense API. Includes a Prompt Defense Analyzer that checks 12 attack vectors including 'Unicode/Homoglyph Attack (MEDIUM)'. Latest release 4.6.0 April 14, 2026.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/cisco-ai-defense/mcp-scanner",
+        "title": "Cisco AI Defense MCP Scanner",
+        "publisher": "Cisco AI Defense MCP Scanner",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Unicode/Homoglyph Attack (MEDIUM)",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Cisco AI Defense MCP Scanner claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-032",
+    "claim_text": "Cisco's Unicode/Homoglyph check is NOT a byte-level scan of tool descriptions. The README explicitly states the analyzer checks for 'missing defensive measures' against the 12 attack vectors. It warns developers to add defenses; it does not actually count zero-width bytes or flag homoglyph mixes in the description payload.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/cisco-ai-defense/mcp-scanner",
+        "title": "Cisco AI Defense MCP Scanner",
+        "publisher": "Cisco AI Defense MCP Scanner",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "The Prompt Defense Analyzer checks MCP tool descriptions and system prompts for missing defensive measures against 12 common attack vectors.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Cisco AI Defense MCP Scanner claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-033",
+    "claim_text": "Ramparts is an Apache-2.0 Rust scanner that performs YARA-based static analysis, capability discovery, cross-origin analysis, and LLM-powered analysis on MCP endpoints. Last release v0.7.3 September 11, 2025.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/getjavelin/ramparts",
+        "title": "Ramparts (Javelin)",
+        "publisher": "Ramparts (Javelin)",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Performs yara-based checks for common vulnerabilities",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Ramparts (Javelin) claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-034",
+    "claim_text": "Ramparts documentation does not mention hidden Unicode, zero-width chars, homoglyphs, or commandeering. Focus is tool poisoning, command injection, and exfiltration via YARA patterns.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/getjavelin/ramparts",
+        "title": "Ramparts (Javelin)",
+        "publisher": "Ramparts (Javelin)",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "tool poisoning, command injection, and data exfiltration risks",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Ramparts (Javelin) claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-035",
+    "claim_text": "Nova-Proximity is a GPL-v3 open-source scanner for MCP servers and Agent Skills, using NOVA pattern-based analysis plus LLM evaluation. Detects prompt injection, jailbreaks, suspicious code patterns, and skill-level threats (code execution, data exfiltration, unsafe deserialization).",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/fr0gger/proximity",
+        "title": "Nova-Proximity (Thomas Roccia)",
+        "publisher": "Nova-Proximity (Thomas Roccia)",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Pattern-based security analysis with LLM evaluation",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Nova-Proximity (Thomas Roccia) claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-036",
+    "claim_text": "Nova-Proximity README does not mention detection of hidden Unicode, zero-width characters, homoglyphs, agent commandeering, or forward references. Repository has 12 commits; early-stage research tool.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/fr0gger/proximity",
+        "title": "Nova-Proximity (Thomas Roccia)",
+        "publisher": "Nova-Proximity (Thomas Roccia)",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "12 Commits",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Nova-Proximity (Thomas Roccia) claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-037",
+    "claim_text": "mcpscan.ai is a hosted MCP scanner with free tier for public GitHub repo scanning and enterprise tier for private scans. Scans for command injection, path traversal, tool poisoning (with specialized LLM classifier on tool metadata), prompt injection, and configuration weaknesses.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://mcpscan.ai/",
+        "title": "mcpscan.ai",
+        "publisher": "mcpscan.ai",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "an advanced Tool Metadata Scanner that employs a specialized LLM classifier",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=mcpscan.ai claim_type=what_it_does tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-038",
+    "claim_text": "mcpscan.ai does not mention hidden Unicode, zero-width characters, homoglyphs, or commandeering imperatives. Their LLM classifier may catch some obfuscation but they do not claim it. Free tier scans public GitHub only; private repos require enterprise contract.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://mcpscan.ai/",
+        "title": "mcpscan.ai",
+        "publisher": "mcpscan.ai",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "free tier for scanning public GitHub repositories",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=mcpscan.ai claim_type=what_it_misses tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-039",
+    "claim_text": "Across 11 surveyed products, exactly zero perform actual byte-level Unicode auditing of MCP tool descriptions. Cisco's scanner names 'Unicode/Homoglyph Attack' as a vector but only flags missing defenses, not actual hidden bytes. No surveyed product scans claude_desktop_config.json directly. No surveyed product produces a hidden-byte count.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/cisco-ai-defense/mcp-scanner",
+        "title": "Cross-product synthesis",
+        "publisher": "Cross-product synthesis",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "missing defensive measures against 12 common attack vectors",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Cross-product synthesis claim_type=gap_analysis tag=VERIFIED"
+  },
+  {
+    "claim_id": "COMP-040",
+    "claim_text": "The closest competitor by product surface is Invariant Labs MCP-Scan: open source, free, MCP-specific, scans tool descriptions, has the most credible research provenance (coined 'Tool Poisoning Attack'). Differentiation for mcp-scan.dev: byte-level Unicode forensics (hidden-byte count, zero-width detection, homoglyph mix), agent commandeering imperative pattern matching, forward-reference detection, and a 60-second zero-install web UI accepting raw config paste rather than a CLI install.",
+    "category": "competitor_grid",
+    "sources": [
+      {
+        "url": "https://github.com/invariantlabs-ai/mcp-scan",
+        "title": "Cross-product synthesis",
+        "publisher": "Cross-product synthesis",
+        "publish_date": "",
+        "primary": true,
+        "source_type": "vendor_doc",
+        "exact_quote": "Statically scans all your installed servers for malicious tool descriptions",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "INFERENCE"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Cell on positioning grid: product=Cross-product synthesis claim_type=closest_competitor tag=INFERENCE"
+  },
+  {
+    "claim_id": "COMP-GRID",
+    "claim_text": "Eleven commercial and open-source MCP scanners survey the space; none perform byte-level Unicode forensics on tool descriptions.",
+    "category": "competitor_grid",
+    "sources": [],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Roll-up of the 40 competitor_grid POSITIONING_CELL entries. Resolves to the grid summary at content/sources_v2.summary.md."
+  },
+  {
+    "claim_id": "MCP-THREAT-001",
+    "claim_text": "Invariant Labs coined the term 'Tool Poisoning Attack' (TPA) on April 1, 2025, defining it as malicious instructions embedded in MCP tool descriptions that are visible to AI models but invisible to users.",
+    "category": "mcp_threat_landscape",
+    "sources": [
+      {
+        "url": "https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks",
+        "title": "MCP Security Notification: Tool Poisoning Attacks",
+        "publisher": "Invariant Labs",
+        "publish_date": "2025-04-01",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "A Tool Poisoning Attack occurs when malicious instructions are embedded within MCP tool descriptions that are invisible to users but visible to AI models.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://snyk.io/news/snyk-acquires-invariant-labs-to-accelerate-agentic-ai-security-innovation/",
+        "title": "Snyk Acquires Invariant Labs to Accelerate Agentic AI Security Innovation",
+        "publisher": "Snyk",
+        "publish_date": "2025-06-24",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "discovering and naming attack terminology such as 'tool poisoning' and 'MCP rug pulls.'",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://developer.microsoft.com/blog/protecting-against-indirect-injection-attacks-mcp",
+        "title": "Protecting against indirect prompt injection attacks in MCP",
+        "publisher": "Microsoft for Developers",
+        "publish_date": "2025-04-28",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "\"Tool Poisoning\" is a vulnerability where an attacker embeds malicious instructions within the descriptions of MCP tools.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/",
+        "title": "MCP: Untrusted Servers and Confused Clients, Plus a Sneaky Exploit",
+        "publisher": "Embrace The Red (Johann Rehberger)",
+        "publish_date": "2025-05-02",
+        "primary": true,
+        "source_type": "redteam_report",
+        "exact_quote": "This means that just enabling a tool already hands control of the LLM inference over to that specific MCP server the tool interface definition (metadata) was loaded from.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "Strongest version: TPA was named and demonstrated by Invariant Labs in April 2025; the term is now adopted by Microsoft and Snyk (post-acquisition). Invariant's original PoC used visible <IMPORTANT> tags, not hidden Unicode. The asymmetry (model sees, user does not) is the load-bearing concept. This is the cleanest single-claim foundation for the post."
+  },
+  {
+    "claim_id": "MCP-THREAT-002",
+    "claim_text": "Zero-width and invisible Unicode characters function as a steganographic channel that LLMs read as valid tokens but humans cannot see, enabling hidden-payload prompt injection.",
+    "category": "mcp_threat_landscape",
+    "sources": [
+      {
+        "url": "https://www.promptfoo.dev/blog/invisible-unicode-threats/",
+        "title": "Invisible Unicode Threats: Hidden Prompt Injection Attacks on LLMs",
+        "publisher": "Promptfoo (Asmi Gulati)",
+        "publish_date": "2025-04-10",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "While these characters are invisible to humans, LLMs see them as distinct, valid Unicode characters in the input stream.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+        "title": "LLM01:2025 Prompt Injection",
+        "publisher": "OWASP Gen AI Security Project",
+        "publish_date": "2024-11-17",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "These inputs can affect the model even if they are imperceptible to humans, therefore prompt injections do not need to be human-visible/readable, as long as the content is parsed by the model.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/",
+        "title": "MCP: Untrusted Servers and Confused Clients, Plus a Sneaky Exploit",
+        "publisher": "Embrace The Red (Johann Rehberger)",
+        "publish_date": "2025-05-02",
+        "primary": true,
+        "source_type": "redteam_report",
+        "exact_quote": "So, again it is possible to pass hidden instructions through various UI and API layers...the user inspects the instructions, where nothing strange is visible. However, once the LLM inference starts Claude will interpret the hidden text and take to the user unknown actions.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+        "title": "AI Red Teaming Agent - Microsoft Foundry",
+        "publisher": "Microsoft Learn",
+        "publish_date": "2026-04-22",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "AsciiSmuggler | Conceals data within ASCII characters, making it harder to detect.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Promptfoo is the cleanest primary source, and it specifies the exact codepoints used as a binary encoding: U+200B start, U+200C as 0-bit, U+2063 as 1-bit, U+200D end. OWASP LLM01:2025 generalizes the principle. Embrace The Red's post directly demonstrates Unicode Tags injected into MCP tool descriptions that survive UI rendering. Microsoft PyRIT lists AsciiSmuggler, UnicodeConfusable, and UnicodeSubstitution as production attack strategies, which shows this is treated as a known channel by enterprise red teams. Note: this post has 0 actual hidden-Unicode attacks observed in the wild from the 911-server scan, so the claim is 'channel exists and is documented' not 'channel is being actively exploited at scale.'"
+  },
+  {
+    "claim_id": "MCP-THREAT-003",
+    "claim_text": "OX Security disclosed in April 2026 that a design choice in Anthropic's official MCP SDKs exposes 150 million-plus downloads and up to 200,000 servers to remote command execution, with 10-plus CVEs assigned across MCP implementations.",
+    "category": "mcp_threat_landscape",
+    "sources": [
+      {
+        "url": "https://www.ox.security/blog/the-mother-of-all-ai-supply-chains-critical-systemic-vulnerability-at-the-core-of-the-mcp/",
+        "title": "The Mother of All AI Supply Chains: Critical, Systemic Vulnerability at the Core of Anthropic's MCP",
+        "publisher": "OX Security",
+        "publish_date": "2026-04-15",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "150M+ downloads, 7,000+ publicly accessible servers — and up to 200,000 vulnerable instances in total.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.ox.security/blog/the-mother-of-all-ai-supply-chains-critical-systemic-vulnerability-at-the-core-of-the-mcp/",
+        "title": "The Mother of All AI Supply Chains: Critical, Systemic Vulnerability at the Core of Anthropic's MCP",
+        "publisher": "OX Security",
+        "publish_date": "2026-04-15",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "10 CVEs Issued (and counting)",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.ox.security/blog/the-mother-of-all-ai-supply-chains-technical-deep-dive/",
+        "title": "The Mother of All AI Supply Chains - Technical Deep Dive",
+        "publisher": "OX Security",
+        "publish_date": "2026-04-15",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "Anthropic's modelcontextprotocol gives a direct configuration-to-command execution via their STDIO interface on all of their implementations, regardless of programming language.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.theregister.com/2026/04/16/anthropic_mcp_design_flaw/",
+        "title": "MCP 'design flaw' puts 200k servers at risk: Researcher",
+        "publisher": "The Register (Jessica Lyons)",
+        "publish_date": "2026-04-16",
+        "primary": true,
+        "source_type": "news",
+        "exact_quote": "A design flaw – or expected behavior based on a bad design choice, depending on who is telling the story – baked into Anthropic's official Model Context Protocol (MCP) puts as many as 200,000 servers at risk of complete takeover, according to security researchers.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html",
+        "title": "Anthropic MCP Design Vulnerability Enables RCE, Threatening AI Supply Chain",
+        "publisher": "The Hacker News",
+        "publish_date": "2026-04-20",
+        "primary": false,
+        "source_type": "news",
+        "exact_quote": "affects more than 7,000 publicly accessible servers and software packages totaling more than 150 million downloads",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.theregister.com/2026/04/16/anthropic_mcp_design_flaw/",
+        "title": "MCP 'design flaw' puts 200k servers at risk: Researcher",
+        "publisher": "The Register",
+        "publish_date": "2026-04-16",
+        "primary": false,
+        "source_type": "news",
+        "exact_quote": "Anthropic 'declined to modify the protocol's architecture, citing the behavior as 'expected,'' according to the Ox researchers' statement.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "Verified the prior QUOTE_NOT_FOUND on the technical deep dive: the precise wording is 'direct configuration-to-command execution via their STDIO interface on all of their implementations, regardless of programming language' (without the trailing fragment originally stored). Use this corrected quote, not the longer concatenation in the existing sources.json. OX disclosure is about STDIO command injection, which is adjacent to but distinct from tool-description Tool Poisoning. Both share the same root: MCP has no protocol-level sanitization. Anthropic's 'declined to modify' response is the strongest framing for the 'door is open' pivot."
+  },
+  {
+    "claim_id": "MCP-THREAT-004",
+    "claim_text": "The MCP specification defines tool description as a 'Human-readable description of functionality' with no character-set constraints, no sanitization requirements, and explicit warnings only on annotations, not descriptions.",
+    "category": "mcp_threat_landscape",
+    "sources": [
+      {
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+        "title": "MCP Specification 2025-06-18: Server / Tools",
+        "publisher": "Model Context Protocol (Anthropic)",
+        "publish_date": "2025-06-18",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "* `description`: Human-readable description of functionality",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+        "title": "MCP Specification 2025-06-18: Server / Tools",
+        "publisher": "Model Context Protocol (Anthropic)",
+        "publish_date": "2025-06-18",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "For trust & safety and security, clients **MUST** consider tool annotations to be untrusted unless they come from trusted servers.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+        "title": "MCP Specification 2025-06-18: Server / Tools",
+        "publisher": "Model Context Protocol (Anthropic)",
+        "publish_date": "2025-06-18",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "Servers **MUST**: Validate all tool inputs, Implement proper access controls, Rate limit tool invocations, Sanitize tool outputs",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+        "title": "MCP Specification 2025-06-18: Server / Tools",
+        "publisher": "Model Context Protocol (Anthropic)",
+        "publish_date": "2025-06-18",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "Clients **SHOULD**: Prompt for user confirmation on sensitive operations, Show tool inputs to the user before calling the server, to avoid malicious or accidental data exfiltration, Validate tool results before passing to LLM",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://modelcontextprotocol.io/specification/draft/basic/security_best_practices",
+        "title": "MCP Security Best Practices (Specification Draft)",
+        "publisher": "Model Context Protocol (Anthropic)",
+        "publish_date": "2025-06-18",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "This document identifies security risks, attack vectors, and best practices specific to MCP implementations.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "Both prior QUOTE_NOT_FOUND items in sources.json are now corrected. The spec page lives at /specification/2025-06-18/server/tools (not /docs/concepts/tools). The 'Show tool inputs to the user' clause is a SHOULD on call-time arguments, not a MUST on listing-time descriptions. The MUST-untrusted clause applies to tool annotations only. Tool descriptions sit in the protocol-trusted band by default. The Security Best Practices spec covers OAuth confused deputy, token passthrough, SSRF, session hijacking, scope minimization, and local server compromise, but does NOT cover tool description sanitization or character-set restrictions. That gap is the load-bearing finding for this post."
+  },
+  {
+    "claim_id": "MCP-THREAT-005",
+    "claim_text": "Anthropic's own MCP server implementations have shipped exploitable prompt-injection chains; Cyata disclosed three CVEs in mcp-server-git in January 2026, fixed in versions 2025.9.25 and 2025.12.18.",
+    "category": "mcp_threat_landscape",
+    "sources": [
+      {
+        "url": "https://thehackernews.com/2026/01/three-flaws-in-anthropic-mcp-git-server.html",
+        "title": "Three Flaws in Anthropic MCP Git Server Enable File Access and Code Execution",
+        "publisher": "The Hacker News",
+        "publish_date": "2026-01-20",
+        "primary": false,
+        "source_type": "news",
+        "exact_quote": "These flaws can be exploited through prompt injection, meaning an attacker who can influence what an AI assistant reads (a malicious README, a poisoned issue description, a compromised webpage) can weaponize these vulnerabilities",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.theregister.com/2026/01/20/anthropic_prompt_injection_flaws/",
+        "title": "Anthropic quietly fixed flaws in its Git MCP server",
+        "publisher": "The Register",
+        "publish_date": "2026-01-20",
+        "primary": false,
+        "source_type": "news",
+        "exact_quote": "Anthropic has fixed three bugs in its official Git MCP server that researchers say can be chained with other MCP tools to remotely execute malicious code or overwrite files via prompt injection.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.infosecurity-magazine.com/news/prompt-injection-bugs-anthropic/",
+        "title": "Prompt Injection Bugs Found in Official Anthropic Git MCP Server",
+        "publisher": "Infosecurity Magazine",
+        "publish_date": "2026-01-20",
+        "primary": false,
+        "source_type": "news",
+        "exact_quote": "The flaws allow attackers to execute code when mcp-server-git is used alongside a filesystem MCP server, delete arbitrary files and load arbitrary files into a large language model's context.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://thehackernews.com/2026/01/three-flaws-in-anthropic-mcp-git-server.html",
+        "title": "Three Flaws in Anthropic MCP Git Server Enable File Access and Code Execution",
+        "publisher": "The Hacker News",
+        "publish_date": "2026-01-20",
+        "primary": false,
+        "source_type": "cve",
+        "exact_quote": "CVE-2025-68143: A path traversal vulnerability arising as a result of the git_init tool accepting arbitrary file system paths during repository creation without validation",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Useful as a 'this is not theoretical, even Anthropic's own servers were vulnerable' anchor. Disclosed by Cyata (researcher Yarden Porat). Three CVEs: CVE-2025-68143 (git_init path traversal), CVE-2025-68144 (git_diff/git_checkout argument injection), CVE-2025-68145 (--repository flag path traversal). Reported June-July 2025, fixed December 2025."
+  },
+  {
+    "claim_id": "MCP-THREAT-006",
+    "claim_text": "Snyk Agent Scan (formerly Invariant MCP-Scan) is the most widely adopted MCP security scanner; it detects tool poisoning, prompt injection, tool shadowing, and toxic flows, but does not detect zero-width or hidden Unicode characters in tool descriptions.",
+    "category": "mcp_threat_landscape",
+    "sources": [
+      {
+        "url": "https://github.com/snyk/agent-scan",
+        "title": "snyk/agent-scan: Security scanner for AI agents, MCP servers and agent skills",
+        "publisher": "Snyk (GitHub)",
+        "publish_date": "2026-04-15",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "Detects 15+ distinct security risks across MCP servers and agent skills: MCP: Prompt Injection, Tool Poisoning, Tool Shadowing, Toxic Flows",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://github.com/snyk/agent-scan",
+        "title": "snyk/agent-scan: Security scanner for AI agents, MCP servers and agent skills",
+        "publisher": "Snyk (GitHub)",
+        "publish_date": "2026-04-15",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "Agent Scan searches through your local agent's configuration files to find agents, skills, and MCP servers. For MCP, it connects to servers and retrieves tool descriptions. It then validates the components, both with local checks and by invoking the Agent Scan API.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://snyk.io/news/snyk-acquires-invariant-labs-to-accelerate-agentic-ai-security-innovation/",
+        "title": "Snyk Acquires Invariant Labs to Accelerate Agentic AI Security Innovation",
+        "publisher": "Snyk",
+        "publish_date": "2025-06-24",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "discovering and naming attack terminology such as 'tool poisoning' and 'MCP rug pulls.'",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://labs.snyk.io/resources/detect-tool-poisoning-mcp-server-security/",
+        "title": "How to Detect Tool Poisoning in MCP Server Security",
+        "publisher": "Snyk Labs",
+        "publish_date": "2025-08-01",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "MCP-Scan will perform various types of analysis to find different classifications of vulnerabilities that impact MCP servers, such as tool poisoning, toxic flow analysis, and more.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "The negative finding is critical for the post: zero mention of zero-width or invisible Unicode detection in either the GitHub README or the Snyk Labs detection guide. This is the gap mcp-scan.dev fills. The tool's strength is pattern matching on visible <IMPORTANT> tags and toxic flows; the weakness is anything that hides in the codepoint stream. Snyk acquired Invariant Labs in June 2025; latest release v0.4.13 in April 2026."
+  },
+  {
+    "claim_id": "MCP-THREAT-007",
+    "claim_text": "Microsoft's AI Red Team treats MCP tool poisoning as indirect prompt injection (XPIA), and its production red-team agent ships with codified Unicode-based obfuscation strategies including AsciiSmuggler, UnicodeConfusable, and UnicodeSubstitution.",
+    "category": "mcp_threat_landscape",
+    "sources": [
+      {
+        "url": "https://developer.microsoft.com/blog/protecting-against-indirect-injection-attacks-mcp",
+        "title": "Protecting against indirect prompt injection attacks in MCP",
+        "publisher": "Microsoft for Developers",
+        "publish_date": "2025-04-28",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "\"Tool Poisoning\" is a vulnerability where an attacker embeds malicious instructions within the descriptions of MCP tools.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://developer.microsoft.com/blog/protecting-against-indirect-injection-attacks-mcp",
+        "title": "Protecting against indirect prompt injection attacks in MCP",
+        "publisher": "Microsoft for Developers",
+        "publish_date": "2025-04-28",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "We recommend two approaches: implementing AI prompt shields, which help by analyzing prompts and tool interactions to prevent unexpected behaviors, and establishing robust supply chain security mechanisms.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+        "title": "AI Red Teaming Agent - Microsoft Foundry",
+        "publisher": "Microsoft Learn",
+        "publish_date": "2026-04-22",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "Indirect Prompt Injected Attacks (also known as Cross-Domain Prompt Injected Attacks, XPIA) red teaming tests whether an agent can be manipulated by malicious instructions hidden in external data sources, such as emails or documents—retrieved via tool calls.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+        "title": "AI Red Teaming Agent - Microsoft Foundry",
+        "publisher": "Microsoft Learn",
+        "publish_date": "2026-04-22",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "UnicodeConfusable | Uses Unicode characters that look similar to standard characters, creating visual confusion. | UnicodeSubstitution | Substitutes standard characters with Unicode equivalents, often for obfuscation.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/03/12/detecting-analyzing-prompt-abuse-in-ai-tools/",
+        "title": "Detecting and analyzing prompt abuse in AI tools",
+        "publisher": "Microsoft Security Blog (DART / Incident Response)",
+        "publish_date": "2026-03-12",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "Prompt injection recognized as one of the most significant vulnerabilities in the 2025 OWASP guidance for Large Language Model Applications",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Microsoft Foundry's red-team agent product page is gold: it is one of the only enterprise sources that names Unicode-based obfuscation as a first-class attack strategy, alongside AnsiAttack, AsciiArt, AsciiSmuggler, Diacritic, etc. Note: the AI Red Teaming Agent does NOT currently support 'Function tool calls' or 'Non-Foundry agents,' so its MCP coverage is limited; this is a useful tension to surface. The DART blog (March 2026) does not name MCP specifically; it covers URL-fragment indirect injection."
+  },
+  {
+    "claim_id": "MCP-THREAT-008",
+    "claim_text": "OWASP's 2025 guidance places prompt injection at the top of both the LLM Top 10 (LLM01) and the Agentic Applications Top 10 (ASI01-Goal Hijack, ASI02-Tool Misuse), and explicitly states injections do not need to be human-readable.",
+    "category": "mcp_threat_landscape",
+    "sources": [
+      {
+        "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+        "title": "LLM01:2025 Prompt Injection",
+        "publisher": "OWASP Gen AI Security Project",
+        "publish_date": "2024-11-17",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "A Prompt Injection Vulnerability occurs when user prompts alter the LLM's behavior or output in unintended ways.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+        "title": "LLM01:2025 Prompt Injection",
+        "publisher": "OWASP Gen AI Security Project",
+        "publish_date": "2024-11-17",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "These inputs can affect the model even if they are imperceptible to humans, therefore prompt injections do not need to be human-visible/readable, as long as the content is parsed by the model.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/",
+        "title": "OWASP Top 10 for Agentic Applications: The Benchmark for Agentic Security in the Age of Autonomous AI",
+        "publisher": "OWASP Gen AI Security Project",
+        "publish_date": "2025-12-09",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "Hidden prompts turned copilots into silent exfiltration engines (ASI01 – Agent Goal Hijack, e.g EchoLeak).",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.promptfoo.dev/docs/red-team/owasp-agentic-ai/",
+        "title": "OWASP Top 10 for Agentic Applications",
+        "publisher": "Promptfoo",
+        "publish_date": "2025-12-15",
+        "primary": false,
+        "source_type": "vendor_blog",
+        "exact_quote": "ASI02: Tool Misuse and Exploitation - Agents use legitimate tools in unsafe ways",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://owasp.org/www-project-agentic-skills-top-10/",
+        "title": "OWASP Agentic Skills Top 10",
+        "publisher": "OWASP Foundation",
+        "publish_date": "2026-02-01",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "pattern-matching scanners miss the majority of critical threats, which rely on natural-language instruction manipulation rather than code signatures.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "The OWASP LLM01 'imperceptible to humans' clause is the single best textbook citation for the post's core thesis. The OWASP Agentic Skills Top 10 quote is a direct rebuttal to scanner-only defense, which mcp-scan.dev should lean into. AST08 (Poor Scanning) explicitly faults the 'pattern matching is enough' assumption. ASI02 Tool Misuse covers the chained-tool exploitation we have separately seen in Cyata's Anthropic Git CVEs."
+  },
+  {
+    "claim_id": "MCP-THREAT-009",
+    "claim_text": "MITRE ATLAS catalogs LLM Prompt Injection as AML.T0051 with two sub-techniques (.000 Direct, .001 Indirect), classified under the Initial Access tactic.",
+    "category": "mcp_threat_landscape",
+    "sources": [
+      {
+        "url": "https://www.startupdefense.io/mitre-atlas-techniques/aml-t0051-llm-prompt-injection",
+        "title": "LLM Prompt Injection (AML.T0051) | MITRE ATLAS",
+        "publisher": "Startup Defense",
+        "publish_date": "2025-03-01",
+        "primary": false,
+        "source_type": "vendor_blog",
+        "exact_quote": "LLM Prompt Injection (AML.T0051) is a technique in the MITRE ATLAS framework — the adversarial threat landscape for AI systems. It describes how adversaries may craft malicious prompts as inputs to an llm that cause the llm to act in unintended ways.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.startupdefense.io/mitre-atlas-techniques/aml-t0051-llm-prompt-injection",
+        "title": "LLM Prompt Injection (AML.T0051) | MITRE ATLAS",
+        "publisher": "Startup Defense",
+        "publish_date": "2025-03-01",
+        "primary": false,
+        "source_type": "vendor_blog",
+        "exact_quote": "indirect injection embedded within data the LLM might process later (e.g., a malicious string hidden in a web page, an email, or a document used by a RAG system)",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.promptfoo.dev/docs/red-team/mitre-atlas/",
+        "title": "MITRE ATLAS | Promptfoo",
+        "publisher": "Promptfoo",
+        "publish_date": "2025-09-01",
+        "primary": false,
+        "source_type": "vendor_blog",
+        "exact_quote": "Prompt injection is the most prominent ATLAS technique, cataloged as AML.T0051",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.vectra.ai/topics/mitre-atlas",
+        "title": "MITRE ATLAS: AI security framework with 16 tactics and 84 techniques",
+        "publisher": "Vectra AI",
+        "publish_date": "2025-10-01",
+        "primary": false,
+        "source_type": "vendor_blog",
+        "exact_quote": "MITRE ATLAS framework with 16 tactics and 84 techniques",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "NEEDS_MORE",
+    "lead_with_this_claim": false,
+    "notes": "Could not retrieve atlas.mitre.org/techniques/AML.T0051 directly (404 from this user agent). The technique is real and widely cited, but I do not have a MITRE-domain primary source verbatim in this run. To upgrade to VERIFIED-with-primary-source, fetch atlas.mitre.org via firecrawl (it likely needs JS rendering) or cite the misp-galaxy.org mirror which republishes the MITRE definitions verbatim. For now, four secondary sources from reputable security vendors converge on the same definition."
+  },
+  {
+    "claim_id": "MCP-THREAT-010",
+    "claim_text": "Cursor and Claude Desktop both display tool descriptions verbatim in approval dialogs without stripping invisible Unicode characters; users have no first-class way to inspect the raw bytes of a tool description before approval.",
+    "category": "mcp_threat_landscape",
+    "sources": [
+      {
+        "url": "https://cursor.com/docs/context/mcp",
+        "title": "Cursor – Model Context Protocol (MCP)",
+        "publisher": "Cursor",
+        "publish_date": "2026-03-01",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "Agent asks for approval before using MCP tools by default. Click the arrow next to the tool name to see arguments.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://cursor.com/docs/context/mcp",
+        "title": "Cursor – Model Context Protocol (MCP)",
+        "publisher": "Cursor",
+        "publish_date": "2026-03-01",
+        "primary": true,
+        "source_type": "vendor_blog",
+        "exact_quote": "Remember that MCP servers can access external services and execute code on your behalf. Always understand what a server does before installation.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/",
+        "title": "MCP: Untrusted Servers and Confused Clients, Plus a Sneaky Exploit",
+        "publisher": "Embrace The Red (Johann Rehberger)",
+        "publish_date": "2025-05-02",
+        "primary": true,
+        "source_type": "redteam_report",
+        "exact_quote": "the user inspects the instructions, where nothing strange is visible. However, once the LLM inference starts Claude will interpret the hidden text and take to the user unknown actions.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+        "title": "MCP Specification 2025-06-18: Server / Tools",
+        "publisher": "Model Context Protocol (Anthropic)",
+        "publish_date": "2025-06-18",
+        "primary": true,
+        "source_type": "spec",
+        "exact_quote": "Provide UI that makes clear which tools are being exposed to the AI model, Insert clear visual indicators when tools are invoked, Present confirmation prompts to the user for operations, to ensure a human is in the loop",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "NEEDS_MORE",
+    "lead_with_this_claim": false,
+    "notes": "Strongest evidence I have: (a) the MCP spec only requires UI visibility on call-time tool inputs, not on listing-time descriptions; (b) Cursor's docs only mention showing 'arguments' on click, not the description itself; (c) Embrace The Red demonstrated that hidden Unicode characters survive Claude Desktop's UI rendering and execute. Gap: I do not yet have a vendor-authored statement from Anthropic or Cursor or Windsurf saying 'we render the description as-is' or 'we strip invisible Unicode.' Best path to VERIFIED: screenshot test against Cursor + Claude Desktop with a U+200B-loaded MCP server (which is exactly what mcp-scan.dev should ship as a demo). Until then, frame this as 'no vendor guarantees stripping; one independent researcher confirms it does not happen.'"
+  },
+  {
+    "claim_id": "NEWS-001",
+    "claim_text": "Microsoft published a corporate-level agent-defense piece on April 22, 2026 framing AI as both attacker and defender, naming Anthropic's Claude as a tool Microsoft uses to discover vulnerabilities.",
+    "category": "news_this_week",
+    "sources": [
+      {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/04/22/ai-powered-defense-for-an-ai-accelerated-threat-landscape/",
+        "title": "AI-powered defense for an AI-accelerated threat landscape",
+        "publisher": "Microsoft Security Blog",
+        "publish_date": "2026-04-22",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "AI models can autonomously discover weaknesses, chain multiple lower-severity issues into working end-to-end exploits, and produce working proof-of-concept code.",
+        "accessed_at": "2026-04-27T00:05:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/04/02/threat-actor-abuse-of-ai-accelerates-from-tool-to-cyberattack-surface/",
+        "title": "Threat actor abuse of AI accelerates from tool to cyberattack surface",
+        "publisher": "Microsoft Security Blog",
+        "publish_date": "2026-04-02",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Threat actors are embedding AI into how they work across reconnaissance, malware development, and post-compromise operations.",
+        "accessed_at": "2026-04-27T00:05:00Z",
+        "verification_status": "INFERENCE"
+      },
+      {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/04/06/ai-enabled-device-code-phishing-campaign-april-2026/",
+        "title": "Inside an AI-enabled device code phishing campaign",
+        "publisher": "Microsoft Security Blog",
+        "publish_date": "2026-04-06",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Activity moving away from static, manual scripts toward an AI-driven infrastructure.",
+        "accessed_at": "2026-04-27T00:05:00Z",
+        "verification_status": "INFERENCE"
+      },
+      {
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/03/12/detecting-analyzing-prompt-abuse-in-ai-tools/",
+        "title": "Detecting and analyzing prompt abuse in AI tools",
+        "publisher": "Microsoft Security Blog",
+        "publish_date": "2026-03-12",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Hidden instructions in content can subtly bias AI, highlighting the need for oversight and a structured response playbook.",
+        "accessed_at": "2026-04-27T00:05:00Z",
+        "verification_status": "INFERENCE"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Microsoft's April 22 post is in-week but stays at the strategy level. Use as supporting context that 'this matters to enterprise CISOs right now' rather than as the lead peg."
+  },
+  {
+    "claim_id": "NEWS-002",
+    "claim_text": "Pillar Security publicly disclosed CVE-class prompt-injection-to-RCE in Google's Antigravity agentic IDE on April 20, 2026, with mainstream coverage hitting April 21-22.",
+    "category": "news_this_week",
+    "sources": [
+      {
+        "url": "https://www.pillar.security/blog/prompt-injection-leads-to-rce-and-sandbox-escape-in-antigravity",
+        "title": "Prompt Injection leads to RCE and Sandbox Escape in Antigravity",
+        "publisher": "Pillar Security",
+        "publish_date": "2026-04-20",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "By crafting a Pattern value of '-Xsh,' attackers can cause fd to pass matched files to sh for execution as shell scripts. This vulnerability bypasses Antigravity's Secure Mode.",
+        "accessed_at": "2026-04-27T00:08:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://thehackernews.com/2026/04/google-patches-antigravity-ide-flaw.html",
+        "title": "Google Patches Antigravity IDE Flaw Enabling Prompt Injection Code Execution",
+        "publisher": "The Hacker News",
+        "publish_date": "2026-04-21",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "By injecting the -X (exec-batch) flag through the Pattern parameter, an attacker can force fd to execute arbitrary binaries against workspace files.",
+        "accessed_at": "2026-04-27T00:08:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://cyberscoop.com/google-antigravity-pillar-security-agent-sandbox-escape-remote-code-execution/",
+        "title": "Vuln in Google's Antigravity AI agent manager could escape sandbox, give attackers remote code execution",
+        "publisher": "CyberScoop",
+        "publish_date": "2026-04-22",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:08:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.darkreading.com/vulnerabilities-threats/google-fixes-critical-rce-flaw-ai-based-antigravity-tool",
+        "title": "Google Fixes Critical RCE Flaw in AI-Based 'Antigravity' Tool",
+        "publisher": "Dark Reading",
+        "publish_date": "2026-04-22",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:08:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.csoonline.com/article/4161382/prompt-injection-turned-googles-antigravity-file-search-into-rce.html",
+        "title": "Prompt injection turned Google's Antigravity file search into RCE",
+        "publisher": "CSO Online",
+        "publish_date": "2026-04-22",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:08:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-agentic-ide-prompt-injection-sandbox-escap/",
+        "title": "Antigravity Sandbox Escape: Prompt Injection and Native Tool Abuse",
+        "publisher": "Cloud Security Alliance Lab Space",
+        "publish_date": "2026-04-22",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:08:00Z",
+        "verification_status": "INFERENCE"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "STRONGEST PEG. Native-tool prompt injection in a Google product, sandbox bypass, RCE, multiple primary and trade outlets in-week. Maps directly to our post: tool descriptions and tool inputs are the same trust-asymmetry surface."
+  },
+  {
+    "claim_id": "NEWS-003",
+    "claim_text": "OpenAI published the GPT-5.5 system card on April 23, 2026 with a dedicated prompt-injection-against-connectors evaluation, formally adopting tool-use prompt injection as a release-gating safety axis.",
+    "category": "news_this_week",
+    "sources": [
+      {
+        "url": "https://deploymentsafety.openai.com/gpt-5-5",
+        "title": "GPT-5.5 System Card",
+        "publisher": "OpenAI Deployment Safety Hub",
+        "publish_date": "2026-04-23",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "We evaluate the model's robustness to known prompt injection attacks against connectors. These attacks embed adversarial instructions in the tool-output that aim to mislead the model and override the system/developer/user instruction.",
+        "accessed_at": "2026-04-27T00:09:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
+        "title": "GPT-5.5 System Card (PDF)",
+        "publisher": "OpenAI",
+        "publish_date": "2026-04-23",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:09:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.prismnews.com/news/openai-releases-gpt-55-system-card-alongside-model-launch",
+        "title": "OpenAI releases GPT-5.5 system card alongside model launch",
+        "publisher": "Prism News",
+        "publish_date": "2026-04-23",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:09:00Z",
+        "verification_status": "INFERENCE"
+      },
+      {
+        "url": "https://www.promptfoo.dev/blog/gpt-5.2-trust-safety-assessment/",
+        "title": "GPT-5.2 Initial Trust and Safety Assessment",
+        "publisher": "Promptfoo",
+        "publish_date": "2025-12-12",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:09:00Z",
+        "verification_status": "INFERENCE"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Strong supporting peg. Use as 'OpenAI now treats tool-output prompt injection as a release blocker. The post is about the protocol layer where that injection lives.'"
+  },
+  {
+    "claim_id": "NEWS-004",
+    "claim_text": "CVE-2026-7064 (AgentDeskAI browser-tools-mcp OS command injection, CVSS 7.3) was publicly disclosed on April 26, 2026.",
+    "category": "news_this_week",
+    "sources": [
+      {
+        "url": "https://www.thehackerwire.com/vulnerability/CVE-2026-7064/",
+        "title": "CVE-2026-7064",
+        "publisher": "TheHackerWire vulnerability database",
+        "publish_date": "2026-04-26",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "A flaw has been found in AgentDeskAI browser-tools-mcp up to 1.2.0. This issue affects some unknown processing of the file browser-tools-server/browser-connector.ts. Executing a manipulation can lead to os command injection.",
+        "accessed_at": "2026-04-27T00:10:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://cve.threatint.eu/CVE/CVE-2026-7064",
+        "title": "CVE-2026-7064",
+        "publisher": "ThreatINT",
+        "publish_date": "2026-04-26",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:10:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://socket.dev/npm/package/@agentdeskai/browser-tools-mcp",
+        "title": "@agentdeskai/browser-tools-mcp npm package",
+        "publisher": "Socket.dev",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:10:00Z",
+        "verification_status": "INFERENCE"
+      },
+      {
+        "url": "https://github.com/AgentDeskAI/browser-tools-mcp",
+        "title": "AgentDeskAI/browser-tools-mcp",
+        "publisher": "GitHub",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:10:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "A live, unpatched MCP-server CVE disclosed yesterday. Use as a 'this is happening at protocol-installation time, not just at protocol-design time' peg. Slightly different attack surface (input handling, not description poisoning) so flag carefully."
+  },
+  {
+    "claim_id": "NEWS-005",
+    "claim_text": "OX Security's MCP supply-chain advisory continues to drive trade-press coverage in week 17, with The Hacker News and TechRepublic publishing follow-ups on April 20-22, 2026.",
+    "category": "news_this_week",
+    "sources": [
+      {
+        "url": "https://www.ox.security/blog/the-mother-of-all-ai-supply-chains-critical-systemic-vulnerability-at-the-core-of-the-mcp/",
+        "title": "The Mother of All AI Supply Chains: Critical, Systemic Vulnerability at the Core of Anthropic's MCP",
+        "publisher": "OX Security",
+        "publish_date": "2026-04-15",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Exposes 150M+ downloads and up to 200K servers to complete takeover.",
+        "accessed_at": "2026-04-27T00:11:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html",
+        "title": "Anthropic MCP Design Vulnerability Enables RCE, Threatening AI Supply Chain",
+        "publisher": "The Hacker News",
+        "publish_date": "2026-04-20",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "This flaw enables Arbitrary Command Execution (RCE) on any system running a vulnerable MCP implementation, granting attackers direct access to sensitive user data, internal databases, API keys, and chat histories.",
+        "accessed_at": "2026-04-27T00:11:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.techrepublic.com/article/news-mcp-ai-security-vulnerability-data-layer-governance/",
+        "title": "The MCP Disclosure Is the AI Era's 'Open Redirect' Moment",
+        "publisher": "TechRepublic",
+        "publish_date": "2026-04-22",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:11:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.infoq.com/news/2026/04/cloudflare-mcp/",
+        "title": "Cloudflare Outlines MCP Architecture as Enterprises Confront Security and Governance Risks",
+        "publisher": "InfoQ",
+        "publish_date": "2026-04-23",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:11:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.infosecurity-magazine.com/news/systemic-flaw-mcp-expose-150/",
+        "title": "Systemic Flaw in MCP Protocol Could Expose 150 Million Downloads",
+        "publisher": "Infosecurity Magazine",
+        "publish_date": "2026-04-21",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:11:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.ox.security/blog/mcp-supply-chain-advisory-rce-vulnerabilities-across-the-ai-ecosystem/",
+        "title": "MCP STDIO Command Injection: Full Vulnerability Advisory",
+        "publisher": "OX Security",
+        "publish_date": "2026-04-15",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:11:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "The OX Security disclosure is on day 12 of its news cycle this week. The cycle is still amplifying. This is the 'why this matters now' anchor."
+  },
+  {
+    "claim_id": "NEWS-006",
+    "claim_text": "Vercel publicly disclosed on April 20, 2026 that an AI-tool supply-chain compromise (Context.ai OAuth) led to internal access via an employee's Google Workspace account.",
+    "category": "news_this_week",
+    "sources": [
+      {
+        "url": "https://vercel.com/kb/bulletin/vercel-april-2026-security-incident",
+        "title": "Vercel April 2026 security incident",
+        "publisher": "Vercel Knowledge Base",
+        "publish_date": "2026-04-20",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:13:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.helpnetsecurity.com/2026/04/20/vercel-breached/",
+        "title": "Vercel breached via compromised third-party AI tool",
+        "publisher": "Help Net Security",
+        "publish_date": "2026-04-20",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:13:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://therecord.media/cloud-platform-vercel-says-company-breached-through-ai-tool",
+        "title": "Cloud platform Vercel says company breached through third-party AI tool",
+        "publisher": "The Record (Recorded Future)",
+        "publish_date": "2026-04-21",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:13:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.ox.security/blog/vercel-context-ai-supply-chain-attack-breachforums/",
+        "title": "Vercel Breached via Context AI Supply Chain Attack",
+        "publisher": "OX Security",
+        "publish_date": "2026-04-22",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:13:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.trendmicro.com/en_us/research/26/d/vercel-breach-oauth-supply-chain.html",
+        "title": "The Vercel Breach: OAuth Supply Chain Attack Exposes the Hidden Risk in Platform Environment Variables",
+        "publisher": "Trend Micro Research",
+        "publish_date": "2026-04-23",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:13:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "AI-tool-supply-chain breach hitting an audience-relevant company (Vercel) in-week. Even though the attack vector is OAuth not tool-description poisoning, the framing is identical: an AI tool became a corporate-level trust dependency without supply-chain controls. Strong second-tier peg."
+  },
+  {
+    "claim_id": "NEWS-007",
+    "claim_text": "Anthropic disclosed on April 22, 2026 that Mythos (the frontier model in restricted preview to 40 partners) was the subject of an unauthorized-access investigation, while Microsoft's April 22 piece publicly endorsed Anthropic's models for security work.",
+    "category": "news_this_week",
+    "sources": [
+      {
+        "url": "https://red.anthropic.com/2026/mythos-preview/",
+        "title": "Claude Mythos Preview",
+        "publisher": "Anthropic Frontier Red Team (red.anthropic.com)",
+        "publish_date": "2026-04-07",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Mythos Preview is capable of identifying and then exploiting zero-day vulnerabilities in every major operating system and every major web browser when directed by a user to do so.",
+        "accessed_at": "2026-04-27T00:14:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.washingtonpost.com/technology/2026/04/24/anthropic-mythos-ai-washington-cybersecurity-hacking-risk/",
+        "title": "AI hacking fears jolt Washington as Anthropic unveils Mythos",
+        "publisher": "The Washington Post",
+        "publish_date": "2026-04-24",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:14:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities",
+        "title": "Our evaluation of Claude Mythos Preview's cyber capabilities",
+        "publisher": "UK AI Security Institute (AISI)",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:14:00Z",
+        "verification_status": "INFERENCE"
+      },
+      {
+        "url": "https://www.cnn.com/2026/04/03/tech/anthropic-mythos-ai-cybersecurity",
+        "title": "Anthropic's next model could be a 'watershed moment' for cybersecurity",
+        "publisher": "CNN Business",
+        "publish_date": "2026-04-03",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:14:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.anthropic.com/glasswing",
+        "title": "Anthropic - Project Glasswing",
+        "publisher": "Anthropic",
+        "publish_date": "2026-04-07",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:14:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Adjacent peg. Useful for the 'AI security has crossed a Rubicon this month' framing but not a direct MCP-tool-description match."
+  },
+  {
+    "claim_id": "NEWS-008",
+    "claim_text": "Recent (April 2026) academic literature is now formally cataloging tool-description-level prompt injection in MCP, with multiple arXiv preprints and benchmarks released in March-April 2026.",
+    "category": "news_this_week",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2604.20994",
+        "title": "Breaking MCP with Function Hijacking Attacks: Novel Threats for Function Calling and Agentic Models",
+        "publisher": "arXiv",
+        "publish_date": "2026-04-22",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:15:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://arxiv.org/html/2603.21642v1",
+        "title": "Are AI-assisted Development Tools Immune to Prompt Injection?",
+        "publisher": "arXiv",
+        "publish_date": "2026-03",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:15:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://arxiv.org/html/2601.17548v1",
+        "title": "Prompt Injection Attacks on Agentic Coding Assistants: A Systematic Analysis of Vulnerabilities in Skills, Tools, and Protocol Ecosystems",
+        "publisher": "arXiv",
+        "publish_date": "2026-01",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:15:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://arxiv.org/html/2508.14925",
+        "title": "MCPTox: A Benchmark for Tool Poisoning Attack on Real-World MCP Servers",
+        "publisher": "arXiv",
+        "publish_date": "2025-08",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:15:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://arxiv.org/html/2604.05969v1",
+        "title": "A Formal Security Framework for MCP-Based AI Agents: Threat Taxonomy, Verification Models, and Defense Mechanisms",
+        "publisher": "arXiv",
+        "publish_date": "2026-04",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:15:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Academic backstop. Use to claim 'this is not just trade-press hype, it is a formal research subfield as of April 2026.'"
+  },
+  {
+    "claim_id": "NEWS-009",
+    "claim_text": "Funding signals show VCs treating AI agent security as a discrete category in April 2026, with Trent AI emerging from stealth at $13M (April 7) on the explicit thesis that agent supply-chain attacks need a new defense layer.",
+    "category": "news_this_week",
+    "sources": [
+      {
+        "url": "https://trent.ai/blog/trent-ai-raises-13m-to-secure-the-agentic-age/",
+        "title": "Trent AI Raises $13M to Secure the Agentic Age",
+        "publisher": "Trent AI",
+        "publish_date": "2026-04-07",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:16:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://siliconangle.com/2026/04/07/ai-agent-security-startup-trent-ai-launches-13m-funding/",
+        "title": "AI agent security startup Trent AI launches with $13M in funding",
+        "publisher": "SiliconANGLE",
+        "publish_date": "2026-04-07",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:16:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.securityweek.com/trent-ai-emerges-from-stealth-with-13-million-in-funding/",
+        "title": "Trent AI Emerges From Stealth With $13 Million in Funding",
+        "publisher": "SecurityWeek",
+        "publish_date": "2026-04-07",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:16:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://thenextweb.com/news/rilian-raises-17-5-million-to-bring-agentic-ai-to-sovereign-defence",
+        "title": "Rilian raises $17.5 million to bring agentic AI to sovereign defence",
+        "publisher": "The Next Web",
+        "publish_date": "2026-04",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:16:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Trent AI is April 7 (3 weeks ago, just outside current week) but the deeper thesis (74% of enterprises plan agentic AI deployment, 21% have governance maturity) is the longer-tail frame. Use as 'the market is pricing this in.' Not a current-week peg, more of a 30-day signal."
+  },
+  {
+    "claim_id": "NEWS-010",
+    "claim_text": "Cloudflare and Microsoft both made enterprise-grade AI agent infrastructure announcements in April 2026 (Cloudflare Mesh April 14, Agents Week; Microsoft Agent Governance Toolkit April 2) where MCP, tool poisoning, and prompt injection are explicitly named as the threats being mitigated.",
+    "category": "news_this_week",
+    "sources": [
+      {
+        "url": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-launches-mesh-to-secure-the-ai-agent-lifecycle/",
+        "title": "Cloudflare Launches Mesh to Secure the AI Agent Lifecycle",
+        "publisher": "Cloudflare",
+        "publish_date": "2026-04-14",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "AI agents require deep access to private databases, internal APIs, and staging environments to be useful. Granting that access using legacy VPNs or manual tunnels is slow and inherently risky.",
+        "accessed_at": "2026-04-27T00:17:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/",
+        "title": "Introducing the Agent Governance Toolkit: Open-source runtime security for AI agents",
+        "publisher": "Microsoft Open Source Blog",
+        "publish_date": "2026-04-02",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Tool misuse - Capability sandboxing and Model Context Protocol (MCP) security gateway.",
+        "accessed_at": "2026-04-27T00:17:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://blog.cloudflare.com/agents-week-in-review/",
+        "title": "Agents Week 2026 in review",
+        "publisher": "Cloudflare",
+        "publish_date": "2026-04",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:17:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.helpnetsecurity.com/2026/04/03/microsoft-ai-agent-governance-toolkit/",
+        "title": "Microsoft releases open-source toolkit to govern autonomous AI agents",
+        "publisher": "Help Net Security",
+        "publish_date": "2026-04-03",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:17:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.infoq.com/news/2026/04/cloudflare-sandboxes-ga/",
+        "title": "Cloudflare Sandboxes Reach General Availability, Giving AI Agents Persistent Isolated Environments",
+        "publisher": "InfoQ",
+        "publish_date": "2026-04",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "",
+        "accessed_at": "2026-04-27T00:17:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "30-day infrastructure-vendor signal, not a single news peg. Strongest framing: 'Cloudflare and Microsoft both shipped agent security infrastructure this month - the threat model the post describes is the threat model they are pricing into product roadmaps.'"
+  },
+  {
+    "claim_id": "SCAN-001",
+    "claim_text": "Between April 24 and 26, 2026, we collected 5,601 MCP server packages from npm, PyPI, and GitHub.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/summary.json",
+        "title": "summary.json from invisible-ink scan",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "\"total_servers_targeted\": 5601",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Per SCHEMA.md exception: numbers from our own scan are primary-sourced from data/summary.json and require only one source. Hash of source file: see data/summary.json directly."
+  },
+  {
+    "claim_id": "SCAN-002",
+    "claim_text": "We installed 2,016 of them inside an isolated Docker container with no environment variables and no credentials.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/summary.json",
+        "title": "summary.json from invisible-ink scan",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "\"total_servers_probed\": 2016",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Own-scan exception per SCHEMA.md."
+  },
+  {
+    "claim_id": "SCAN-003",
+    "claim_text": "911 returned a tool list, yielding 12,739 tool descriptions for analysis.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/summary.json",
+        "title": "summary.json from invisible-ink scan",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "\"total_servers_with_tools\": 911, \"total_tools_analyzed\": 12739",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Own-scan exception per SCHEMA.md."
+  },
+  {
+    "claim_id": "SCAN-004",
+    "claim_text": "Findings plus a 10 percent random control of unflagged descriptions went to Kimi K2.6 (Cloudflare Workers AI) for second-pass classification.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/summary.json",
+        "title": "summary.json from invisible-ink scan",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "\"total_tools_judged_by_kimi\": 1472",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Own-scan exception."
+  },
+  {
+    "claim_id": "SCAN-005",
+    "claim_text": "Zero servers in production carry Unicode tag-block payloads in their tool descriptions today.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/summary.json",
+        "title": "summary.json findings",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "\"servers_with_any_invisible_chars\": 0",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "Own-scan exception. After methodology corrections (variation selector and Cyrillic latin-ratio fixes), the corpus-wide invisible-char count dropped from 20 servers to 0. Documented in HANDOFF.md."
+  },
+  {
+    "claim_id": "SCAN-006",
+    "claim_text": "Seven servers carry visible agent-commandeering imperatives.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/eval_report.json",
+        "title": "eval_report.json TRUE_VISIBLE bucket",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "TRUE_VISIBLE 7",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Own-scan exception. The 7 servers are listed in HANDOFF.md and require disclosure-window completion before public naming."
+  },
+  {
+    "claim_id": "SCAN-007",
+    "claim_text": "The detector is a TypeScript port of the Python reference scanner, with 18 vitest cases that mirror the original 23-assertion Python suite.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://lib/detectors.ts",
+        "title": "detectors.ts in mcp-audit repo",
+        "publisher": "this product",
+        "publish_date": "2026-04-27",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "TypeScript port of the Python reference implementation",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Code exception. The implementation is the source of truth."
+  },
+  {
+    "claim_id": "STATS-001",
+    "claim_text": "Total MCP server count across major public registries as of April 2026",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Open-Source MCP Servers - 22,286 in the Glama Registry",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Showing 1 - 42 of 13,497 servers",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "13,812 public repositories",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "There are now more than 10,000 active public MCP servers, covering everything from developer tools to Fortune 500 deployments",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "10,000 active servers",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Smithery hosts 7,000+ servers",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "STATS-002",
+    "claim_text": "MCP ecosystem grew explosively over 6-12 months prior to scan: 232% server growth Aug 2025-Feb 2026; 970x SDK download growth from launch to early 2026",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "232% growth in 6 months (August 2025 to February 2026); Starting point: 425 servers (August 2025); Accelerating monthly: 56 (Sept) - 100 (Oct) - 138 (Nov) - 181 (Dec) - 211 (Jan) - 301 (Feb)",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Late 2024 averaging 3,000-5,000 daily downloads; March 26, 2026 peak 13,275,472 daily downloads; April 25, 2026 most recent 2,888,845 daily",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "97M+ monthly SDK downloads across Python and TypeScript",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "approximately 1,200 attendees at the AAIF MCP Dev Summit (April 2026) in New York City",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "STATS-003",
+    "claim_text": "Top MCP packages by weekly downloads (npm and PyPI, week of 2026-04-20 to 2026-04-26)",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "{\"package\":\"@modelcontextprotocol/sdk\",\"downloads\":33448235,\"start\":\"2026-04-20\",\"end\":\"2026-04-26\"}",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Daily 6,078,208; Weekly 62,931,750; Monthly 231,070,519",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "{\"star_count\":84586,\"fork_count\":10513,\"last_updated\":\"2026-04-27T05:33:09Z\"}",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Playwright MCP 35,000; Figma MCP 23,000; GitHub MCP 17,000; Context7 13,000; Cursor MCP 12,000; Supabase MCP 11,000 monthly searches",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "STATS-004",
+    "claim_text": "MCP-related CVEs: 50 catalogued, 13 critical (CVSS 9+), spanning the protocol, the Inspector, and ecosystem packages",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "13 critical vulnerabilities; majority focusing on prompt injection (13 cases) and input validation failures (17 cases)",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "mcp-remote is exposed to OS command injection when connecting to untrusted MCP servers due to crafted input from the authorization_endpoint response URL ... Base Score: 9.6 CRITICAL",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Anthropic MCP Design Vulnerability Enables RCE, Threatening AI Supply Chain",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "New Prompt Injection Attack Vectors Through MCP Sampling",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "STATS-005",
+    "claim_text": "Aggregate weekly downloads across MCP packages exceed 100M; the Python mcp package alone serves 62.9M weekly",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Weekly 62,931,750; Monthly 231,070,519",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "{\"package\":\"@modelcontextprotocol/sdk\",\"downloads\":132862737,\"start\":\"2026-03-28\",\"end\":\"2026-04-26\"}",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Daily 1,514,277; Weekly 16,557,865; Monthly 69,074,904",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "97M+ monthly SDK downloads across Python and TypeScript",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "STATS-006",
+    "claim_text": "Enterprise MCP adoption: 25+ remote enterprise vendor MCP servers as of April 2026; 70% of catalogued MCP servers built by B2B companies",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "70% built by B2B companies; 30% by B2C; 81% of companies had fewer than 200 employees; ~2% of Zapier's 9,000 marketplace companies have MCP servers; ~86% of MCP server companies lack Zapier integrations",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "first-class client support across major AI platforms like ChatGPT, Claude, Cursor, Gemini, Microsoft Copilot, Visual Studio Code and many more",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "pre-built MCP servers for popular enterprise systems like Google Drive, Slack, GitHub, Git, Postgres, and Puppeteer",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Reference Servers: Everything, Fetch, Filesystem, Git, Memory, Sequential Thinking, Time. Archived integrations: AWS KB Retrieval, Brave Search, GitHub, GitLab, Google Drive, Google Maps, PostgreSQL, Sentry, Slack",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "STATS-007",
+    "claim_text": "MCP client adoption: Claude Desktop, Cursor, Windsurf, Zed, VS Code, ChatGPT, Gemini, and Microsoft Copilot all support MCP. Cursor has 1M+ DAU, Windsurf 1M+ users, Claude has 18.9M MAU.",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Block, Apollo, Zed, Replit, Codeium, Sourcegraph",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Claude now features over 75 connectors powered by MCP, with recent additions including Tool Search and Programmatic Tool Calling capabilities",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "OpenAI officially adopted the MCP, after having integrated the standard across its products, including the ChatGPT desktop app",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Claude AI now has 18.9 million monthly active users on the web browser app",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Anthropic's Claude popularity with paying consumers is skyrocketing",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "STATS-008",
+    "claim_text": "Anthropic's headline MCP adoption claims since 2024-11 launch: 10K+ active servers, 97M+ monthly SDK downloads, 75+ Claude connectors, 'one of the fastest-growing open-source projects in AI'",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "a universal, open standard for connecting AI systems with data sources, replacing fragmented integrations with a single protocol",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "There are now more than 10,000 active public MCP servers ... 97M+ monthly SDK downloads across Python and TypeScript ... Claude now features over 75 connectors powered by MCP",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "In one year, MCP has become one of the fastest-growing and widely-adopted open-source projects in AI",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "released with software development kits (SDKs) in programming languages including Python, TypeScript, C# and Java; support extending to 11 languages total (Kotlin, Go, PHP, Perl, Ruby, Rust, and Swift also listed)",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "STATS-009",
+    "claim_text": "Registry user/community claims: Glama 22,286; PulseMCP 13,497; Smithery 7,000+; official MCP Registry in preview since Sept 2025",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Open-Source MCP Servers - 22,286 in the Glama Registry",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Showing 1 - 42 of 13,497 servers; 13,490+ updated daily",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "The registry has launched in preview ... A community driven registry service for Model Context Protocol (MCP) servers ... like an app store for MCP servers",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Cursor-paginated JSON listing returning 30 servers per page; nextCursor field present, suggesting many more total",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Smithery hosts 7,000+ servers",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "STATS-010",
+    "claim_text": "Notable MCP server takedowns and removals: postmark-mcp backdoor (Sept 2025) was the first in-the-wild malicious MCP server, removed from npm after ~1,643 downloads and ~300 organizations affected",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "the attacker added a single extra line of code adding a BCC to every email sent via an AI agent to the attacker ... maintained the npm package through 15 versions before introducing the malicious code",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Simply using the genuine legitimate MCP server from GitHub instead of the reposted npm version would have been enough to avoid the attack",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "First Malicious MCP Server Found Stealing Emails in Rogue Postmark-MCP Package",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "We didn't develop, authorize, or have any involvement with the 'postmark-mcp' npm package. The legitimate Postmark API and services remain secure and unaffected by this incident.",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "Fake Postmark MCP npm package stole emails with one-liner",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "STATS-011",
+    "claim_text": "Bloomberry analysis of 1,400 MCP servers (Feb 2026) found 38.7% had no authentication, 22.9% had wide-open CORS, only 2.4% had rate limiting",
+    "category": "ecosystem_stats",
+    "sources": [
+      {
+        "url": "",
+        "title": "",
+        "publisher": "",
+        "publish_date": "",
+        "primary": false,
+        "source_type": "",
+        "exact_quote": "38.7% of servers had no authentication; 22.9% had wide-open CORS; 2.4% had rate limiting; 3 servers leaked debug information; 93% use Streamable HTTP (vs 7% deprecated SSE); 52% are read operations; 25% write; 23% unclassified",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "NEEDS_MORE",
+    "lead_with_this_claim": false,
+    "notes": ""
+  },
+  {
+    "claim_id": "UNICODE-01",
+    "claim_text": "The Trojan Source paper (Boucher and Anderson, University of Cambridge, 2021) formalized the use of Unicode bidirectional override control characters to make source code render differently to humans than it does to compilers, opening a class of invisible source-code attacks.",
+    "category": "unicode_attack_literature",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2111.00169",
+        "title": "Trojan Source: Invisible Vulnerabilities",
+        "publisher": "arXiv (preprint)",
+        "publish_date": "2021-10-30",
+        "primary": true,
+        "source_type": "academic_paper",
+        "exact_quote": "source code is maliciously encoded so that it appears different to a compiler and to the human eye...tokens are logically encoded in a different order from the one in which they are displayed",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://trojansource.codes/",
+        "title": "Trojan Source Attacks",
+        "publisher": "Boucher and Anderson, University of Cambridge",
+        "publish_date": "2021-11-01",
+        "primary": true,
+        "source_type": "researcher_site",
+        "exact_quote": "The trick is to use Unicode control characters to reorder tokens in source code at the encoding level. These visually reordered tokens can be used to display logic that, while semantically correct, diverges from the logic presented by the logical ordering of source code tokens.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.kb.cert.org/vuls/id/999008",
+        "title": "VU#999008: Various Unicode characters can be leveraged to inject malicious code into source code which appears benign to a human reviewer",
+        "publisher": "CERT/CC (Carnegie Mellon Software Engineering Institute)",
+        "publish_date": "2021-11-09",
+        "primary": true,
+        "source_type": "vulnerability_advisory",
+        "exact_quote": "Attacks that allow for unintended control of Unicode and homoglyphic characters...leverage text encoding that may cause source code to be interpreted differently by a compiler than it appears visually to a human reviewer.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42574",
+        "title": "CVE-2021-42574 (NVD)",
+        "publisher": "NIST National Vulnerability Database",
+        "publish_date": "2021-11-01",
+        "primary": true,
+        "source_type": "cve_record",
+        "exact_quote": "An issue was discovered in the Bidirectional Algorithm in the Unicode Specification through 14.0. It permits the visual reordering of characters via control sequences, which can be used to craft source code that renders different logic than the logical ordering of tokens ingested by compilers and interpreters.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "Trojan Source is the canonical academic precedent. Boucher and Anderson are at Cambridge Computer Lab. The CVE was DISPUTED by Unicode Consortium but accepted by every major language vendor (Rust, GitHub, Python, Apple, Red Hat). This is the strongest single anchor for the post: invisible-byte attacks on text-processing systems are a well-established 2021 result. CVSS 8.3 HIGH."
+  },
+  {
+    "claim_id": "UNICODE-02",
+    "claim_text": "Unicode's own technical reports (UTR #36 Security Considerations, UTS #39 Security Mechanisms, UTS #55 Source Code Handling) explicitly enumerate the security risks of invisible characters, bidirectional overrides, and visually confusable strings, and define the canonical mechanisms (skeletons, mixed-script detection) for filtering them.",
+    "category": "unicode_attack_literature",
+    "sources": [
+      {
+        "url": "https://www.unicode.org/reports/tr36/tr36-15.html",
+        "title": "UTR #36: Unicode Security Considerations (version tr36-15)",
+        "publisher": "The Unicode Consortium",
+        "publish_date": "2014-09-09",
+        "primary": true,
+        "source_type": "standards_document",
+        "exact_quote": "Certain Unicode characters are invisible, although they may affect the rendering of the characters around them. An example is the joiner character, used to request a cursive connection such as in Arabic.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.unicode.org/reports/tr36/tr36-15.html",
+        "title": "UTR #36 Section 2.5: Bidirectional Text Spoofing",
+        "publisher": "The Unicode Consortium",
+        "publish_date": "2014-09-09",
+        "primary": true,
+        "source_type": "standards_document",
+        "exact_quote": "Never allow bidi override characters. As much as possible, avoid mixing right-to-left and left-to-right characters in a single name.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.unicode.org/reports/tr39/",
+        "title": "UTS #39: Unicode Security Mechanisms (version 17.0.0)",
+        "publisher": "The Unicode Consortium",
+        "publish_date": "2025-09-04",
+        "primary": true,
+        "source_type": "standards_document",
+        "exact_quote": "X and Y are mixed-script confusables if and only if they are confusable but their resolved script sets have no elements in common.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.unicode.org/reports/tr39/tr39-31.html",
+        "title": "UTS #39 Section 4: Confusable Detection (version 17.0.0)",
+        "publisher": "The Unicode Consortium",
+        "publish_date": "2025-09-04",
+        "primary": true,
+        "source_type": "standards_document",
+        "exact_quote": "Remove any characters in X that have the property Default_Ignorable_Code_Point",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.unicode.org/reports/tr55/",
+        "title": "UTS #55: Unicode Source Code Handling (version 2)",
+        "publisher": "The Unicode Consortium",
+        "publish_date": "2024-01-29",
+        "primary": true,
+        "source_type": "standards_document",
+        "exact_quote": "invisible characters that are used as overrides to the default behavior of the Unicode Bidirectional Algorithm",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Unicode's own standards-track documents acknowledge these risks. UTS #55 was published explicitly in response to Trojan Source. UTR #36 has been stabilized but still serves as the foundational reference. UTS #39 defines the algorithms (confusable skeletons, mixed-script detection) that any LLM tool description sanitizer should implement."
+  },
+  {
+    "claim_id": "UNICODE-03",
+    "claim_text": "MITRE/NIST formally tracked the Trojan Source attack family with two CVEs in November 2021: CVE-2021-42574 (bidirectional override) and CVE-2021-42694 (homoglyph identifiers), each scored CVSS 8.3 HIGH.",
+    "category": "unicode_attack_literature",
+    "sources": [
+      {
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42574",
+        "title": "CVE-2021-42574 (NVD)",
+        "publisher": "NIST National Vulnerability Database",
+        "publish_date": "2021-11-01",
+        "primary": true,
+        "source_type": "cve_record",
+        "exact_quote": "An issue was discovered in the Bidirectional Algorithm in the Unicode Specification through 14.0. It permits the visual reordering of characters via control sequences, which can be used to craft source code that renders different logic than the logical ordering of tokens ingested by compilers and interpreters.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42694",
+        "title": "CVE-2021-42694 (NVD)",
+        "publisher": "NIST National Vulnerability Database",
+        "publish_date": "2021-11-01",
+        "primary": true,
+        "source_type": "cve_record",
+        "exact_quote": "An issue was discovered in the character definitions of the Unicode Specification through 14.0. The specification allows an adversary to produce source code identifiers such as function names using homoglyphs that render visually identical to a target identifier.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.kb.cert.org/vuls/id/999008",
+        "title": "CERT/CC VU#999008: Trojan Source CVE assignments",
+        "publisher": "CERT/CC",
+        "publish_date": "2021-11-09",
+        "primary": true,
+        "source_type": "vulnerability_advisory",
+        "exact_quote": "Two CVEs assigned: CVE-2021-42574 (Bidi attack) and CVE-2021-42694 (homoglyph attack)",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://trojansource.codes/",
+        "title": "Trojan Source Attacks (CVE list)",
+        "publisher": "Boucher and Anderson",
+        "publish_date": "2021-11-01",
+        "primary": true,
+        "source_type": "researcher_site",
+        "exact_quote": "CVE-2021-42574 - Tracks the main Unicode bidirectional control character attack pattern",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Both CVEs are listed as DISPUTED by MITRE. The dispute is from the Unicode Consortium asserting that bidi behavior is not itself a vulnerability. Vendors disagreed and shipped fixes anyway, which is the relevant signal. CVSS 8.3 (AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H) on both."
+  },
+  {
+    "claim_id": "UNICODE-04",
+    "claim_text": "Major language and platform vendors (Rust, GitHub, Python) shipped explicit Trojan Source mitigations within weeks of disclosure: Rust 1.56.1 added compiler lints rejecting the affected codepoints, GitHub displayed bidi warnings on file views, and the Python core team published PEP 672 enumerating the language-level risks.",
+    "category": "unicode_attack_literature",
+    "sources": [
+      {
+        "url": "https://blog.rust-lang.org/2021/11/01/cve-2021-42574/",
+        "title": "Security advisory for rustc (CVE-2021-42574)",
+        "publisher": "Rust Project",
+        "publish_date": "2021-11-01",
+        "primary": true,
+        "source_type": "vendor_advisory",
+        "exact_quote": "Rust 1.56.1, released on November 1, 2021, introduced two new deny-by-default lints detecting the affected codepoints, respectively in string literals and in comments. The lints will prevent source code files containing those codepoints from being compiled.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://github.blog/changelog/2021-10-31-warning-about-bidirectional-unicode-text/",
+        "title": "Warning about bidirectional Unicode text",
+        "publisher": "GitHub",
+        "publish_date": "2021-10-31",
+        "primary": true,
+        "source_type": "vendor_changelog",
+        "exact_quote": "A warning is now displayed when a file's contents include bidirectional Unicode text. Such text can be interpreted or compiled differently than it appears in a user interface.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://peps.python.org/pep-0672/",
+        "title": "PEP 672: Unicode-related Security Considerations for Python",
+        "publisher": "Python Software Foundation",
+        "publish_date": "2021-11-01",
+        "primary": true,
+        "source_type": "language_specification",
+        "exact_quote": "This document explains possible ways to misuse Unicode to write Python programs that appear to do something else than they actually do.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://peps.python.org/pep-0672/",
+        "title": "PEP 672: Bidirectional Text section",
+        "publisher": "Python Software Foundation",
+        "publish_date": "2021-11-01",
+        "primary": true,
+        "source_type": "language_specification",
+        "exact_quote": "This command still assigns a 100-character string to s, but when displayed as general text following the Bidirectional Algorithm (e.g. in a browser), it appears as s = \"א\" followed by a comment.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Industry response to Trojan Source was rapid and broad. The pattern (vendor adds mitigation in weeks) is exactly what is missing for the MCP tool-description case in 2026. Cite this to set up the rhetorical move: this is the same class of bug, the fix is known, why is the mitigation not yet in MCP runtimes."
+  },
+  {
+    "claim_id": "UNICODE-05",
+    "claim_text": "Zero-width and joining-control characters (ZWJ U+200D, ZWNJ U+200C, Zero Width Space U+200B) have been understood as identifier-spoofing and gateway-evasion primitives since well before the LLM era, with explicit warnings in IDNA / RFC 5894.",
+    "category": "unicode_attack_literature",
+    "sources": [
+      {
+        "url": "https://www.rfc-editor.org/rfc/rfc5894",
+        "title": "RFC 5894: IDNA Background, Explanation, and Rationale (Section 3.1.2)",
+        "publisher": "IETF",
+        "publish_date": "2010-08-01",
+        "primary": true,
+        "source_type": "rfc",
+        "exact_quote": "exceptional danger of being used to produce misleading labels or to cause unacceptable ambiguity in label matching",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.unicode.org/reports/tr36/tr36-15.html",
+        "title": "UTR #36 Section 3.5: Zero-Width Characters",
+        "publisher": "The Unicode Consortium",
+        "publish_date": "2014-09-09",
+        "primary": true,
+        "source_type": "standards_document",
+        "exact_quote": "A gateway might be checking for a sensitive sequence...If what is passed in is 'deXlete', where X is a noncharacter, the gateway lets it through.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.unicode.org/reports/tr39/",
+        "title": "UTS #39 Section 3.1.1: Joining Controls",
+        "publisher": "The Unicode Consortium",
+        "publish_date": "2025-09-04",
+        "primary": true,
+        "source_type": "standards_document",
+        "exact_quote": "to contexts in which they are necessary",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.promptfoo.dev/blog/invisible-unicode-threats/",
+        "title": "Invisible Unicode Threats",
+        "publisher": "Promptfoo",
+        "publish_date": "2025-04-10",
+        "primary": true,
+        "source_type": "industry_blog",
+        "exact_quote": "Unicode, the universal character encoding standard, contains thousands of characters - including ones that are completely invisible to the human eye.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Zero-width characters as a covert channel predate LLMs by 15+ years. RFC 5894 is the long-standing IETF acknowledgement. UTR #36 explicitly describes the gateway-evasion attack pattern (deXlete) which is exactly the structural shape of LLM tool-description bypass."
+  },
+  {
+    "claim_id": "UNICODE-06",
+    "claim_text": "IDN homograph attacks are a long-standing browser security problem; both Chrome and Firefox apply UTS #39 mixed-script and confusable detection to decide when to display Unicode hostnames vs Punycode.",
+    "category": "unicode_attack_literature",
+    "sources": [
+      {
+        "url": "https://chromium.googlesource.com/chromium/src/+/main/docs/idn.md",
+        "title": "IDN in Google Chrome",
+        "publisher": "The Chromium Project",
+        "publish_date": "2021-01-01",
+        "primary": true,
+        "source_type": "vendor_specification",
+        "exact_quote": "Test the label for mixed script confusable per UTS 39. If mixed script confusable is detected, show punycode.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://chromium.googlesource.com/chromium/src/+/main/docs/idn.md",
+        "title": "Chrome IDN: Whole script confusables",
+        "publisher": "The Chromium Project",
+        "publish_date": "2021-01-01",
+        "primary": true,
+        "source_type": "vendor_specification",
+        "exact_quote": "If all the letters in a given label belong to a set of whole-script-confusable letters...and if the hostname doesn't have a corresponding allowed top-level-domain for that script, show punycode.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://wiki.mozilla.org/IDN_Display_Algorithm",
+        "title": "IDN Display Algorithm",
+        "publisher": "Mozilla",
+        "publish_date": "2017-01-01",
+        "primary": true,
+        "source_type": "vendor_specification",
+        "exact_quote": "any intra-script near-homographs will be recognisable to people who understand that script.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.rfc-editor.org/rfc/rfc5894",
+        "title": "RFC 5894 Section 3.3: Layered Restrictions",
+        "publisher": "IETF",
+        "publish_date": "2010-08-01",
+        "primary": true,
+        "source_type": "rfc",
+        "exact_quote": "there is no single magic bullet for any of the security, confusability, or other issues associated with IDNs.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "The browser industry already solved 'when do we render Unicode vs escape it' for hostnames. The MCP world has not solved it for tool descriptions. This is a clean analogy for the post."
+  },
+  {
+    "claim_id": "UNICODE-07",
+    "claim_text": "Unicode tag characters (U+E0000 to U+E007F) are a covert channel that mirrors ASCII but is not rendered in most UIs, and Riley Goodside (January 11, 2024) was first to demonstrate publicly that LLMs read these characters as text while humans see nothing.",
+    "category": "unicode_attack_literature",
+    "sources": [
+      {
+        "url": "https://embracethered.com/blog/posts/2024/hiding-and-finding-text-with-unicode-tags/",
+        "title": "ASCII Smuggler Tool: Crafting Invisible Text and Decoding Hidden Codes",
+        "publisher": "Johann Rehberger / Embrace The Red",
+        "publish_date": "2024-01-14",
+        "primary": true,
+        "source_type": "researcher_blog",
+        "exact_quote": "The Tags Unicode Block mirrors ASCII and because it is often not rendered in the UI, the special text remains unnoticable to users… but LLMs interpret such text.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://embracethered.com/blog/posts/2024/hiding-and-finding-text-with-unicode-tags/",
+        "title": "ASCII Smuggler: Riley Goodside attribution",
+        "publisher": "Johann Rehberger / Embrace The Red",
+        "publish_date": "2024-01-14",
+        "primary": true,
+        "source_type": "researcher_blog",
+        "exact_quote": "A few days ago Riley Goodside posted about an interesting discovery on how an LLM prompt injection can happen via invisible instructions in pasted text.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.robustintelligence.com/blog-posts/understanding-and-mitigating-unicode-tag-prompt-injection",
+        "title": "Understanding and Mitigating Unicode Tag Prompt Injection",
+        "publisher": "Robust Intelligence (now Cisco)",
+        "publish_date": "2024-02-01",
+        "primary": true,
+        "source_type": "industry_research",
+        "exact_quote": "On January 11th 2024, Security researcher Riley Goodside shared a new prompt injection obfuscation technique on Twitter that leverages unicode 'tag' characters to render ASCII text invisible to the human eye.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://languagelog.ldc.upenn.edu/nll/?p=66513",
+        "title": "Invisible text via Unicode tag characters",
+        "publisher": "Language Log (University of Pennsylvania)",
+        "publish_date": "2024-10-15",
+        "primary": true,
+        "source_type": "academic_blog",
+        "exact_quote": "A few days ago Riley Goodside posted about an interesting discovery on how an LLM prompt injection can happen via invisible instructions in pasted text.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "The Tag block (E0000-E007F) attack is the cleanest single demo for the post. Goodside's tweet (Jan 11 2024) is the canonical first-disclosure for the LLM variant. Rehberger's ASCII Smuggler tool followed three days later. This claim alone justifies that the threat is well-known and ungated."
+  },
+  {
+    "claim_id": "UNICODE-08",
+    "claim_text": "Recent academic and industry literature (2024-2026) has formalized invisible-Unicode prompt injection as a measurable attack class against LLMs, including reverse-CAPTCHA evaluations, font-injection vectors, and detection systems for hidden prompts in structured documents.",
+    "category": "unicode_attack_literature",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2603.00164",
+        "title": "Reverse CAPTCHA: Evaluating LLM Susceptibility to Invisible Unicode Instruction Injection",
+        "publisher": "arXiv (preprint)",
+        "publish_date": "2026-02-26",
+        "primary": true,
+        "source_type": "academic_paper",
+        "exact_quote": "We introduce Reverse CAPTCHA, an evaluation framework that tests whether large language models follow invisible Unicode-encoded instructions embedded in otherwise normal-looking text. Unlike traditional CAPTCHAs that distinguish humans from machines, our benchmark exploits a capability gap: models can perceive Unicode control characters that are invisible to human readers.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://arxiv.org/abs/2505.16957",
+        "title": "Invisible Prompts, Visible Threats: Malicious Font Injection in External Resources for Large Language Models",
+        "publisher": "arXiv (preprint)",
+        "publish_date": "2025-05-22",
+        "primary": true,
+        "source_type": "academic_paper",
+        "exact_quote": "Large Language Models (LLMs) are increasingly equipped with capabilities of real-time web search and integrated with protocols like Model Context Protocol (MCP).",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.promptfoo.dev/blog/invisible-unicode-threats/",
+        "title": "Invisible Unicode Threats",
+        "publisher": "Promptfoo",
+        "publish_date": "2025-04-10",
+        "primary": true,
+        "source_type": "industry_blog",
+        "exact_quote": "While these characters are invisible to humans, LLMs see them as distinct, valid Unicode characters in the input stream.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.robustintelligence.com/blog-posts/understanding-and-mitigating-unicode-tag-prompt-injection",
+        "title": "Understanding and Mitigating Unicode Tag Prompt Injection",
+        "publisher": "Robust Intelligence (Cisco)",
+        "publish_date": "2024-02-01",
+        "primary": true,
+        "source_type": "industry_research",
+        "exact_quote": "These instructions are invisible in user interfaces because they use Unicode Tags code points, which are not displayed. However, these characters were included in the training data for LLMs, enabling the models to interpret them.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "The Reverse CAPTCHA paper (Feb 2026) is the single best academic citation for 'this is a measurable LLM-specific attack' because it explicitly frames the human/model perception gap. The Invisible Prompts/Visible Threats paper (May 2025) is the only academic paper that names MCP directly."
+  },
+  {
+    "claim_id": "UNICODE-09",
+    "claim_text": "Johann Rehberger's ASCII Smuggler (January 14, 2024) is the public tooling that operationalized Unicode tag injection, and it has been actively maintained and extended through 2025 (Sneaky Bits, variant selectors).",
+    "category": "unicode_attack_literature",
+    "sources": [
+      {
+        "url": "https://embracethered.com/blog/posts/2024/hiding-and-finding-text-with-unicode-tags/",
+        "title": "ASCII Smuggler Tool: Crafting Invisible Text and Decoding Hidden Codes",
+        "publisher": "Johann Rehberger / Embrace The Red",
+        "publish_date": "2024-01-14",
+        "primary": true,
+        "source_type": "researcher_blog",
+        "exact_quote": "The Tags Unicode Block mirrors ASCII and because it is often not rendered in the UI, the special text remains unnoticable to users… but LLMs interpret such text.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://thehackernews.com/2024/08/microsoft-fixes-ascii-smuggling-flaw.html",
+        "title": "Microsoft Fixes ASCII Smuggling Flaw That Enabled Data Theft from Microsoft 365 Copilot",
+        "publisher": "The Hacker News",
+        "publish_date": "2024-08-27",
+        "primary": true,
+        "source_type": "industry_news",
+        "exact_quote": "ASCII Smuggling is a novel technique that uses special Unicode characters that mirror ASCII but are actually not visible in the user interface.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.robustintelligence.com/blog-posts/understanding-and-mitigating-unicode-tag-prompt-injection",
+        "title": "Understanding and Mitigating Unicode Tag Prompt Injection",
+        "publisher": "Robust Intelligence (Cisco)",
+        "publish_date": "2024-02-01",
+        "primary": true,
+        "source_type": "industry_research",
+        "exact_quote": "UTF-8 Begin: \\xf3\\xa0\\x80\\x80 ... CodePoint Begin: E0000 ... CodePoint End: E007F",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://www.promptfoo.dev/blog/invisible-unicode-threats/",
+        "title": "Invisible Unicode Threats (Promptfoo)",
+        "publisher": "Promptfoo",
+        "publish_date": "2025-04-10",
+        "primary": true,
+        "source_type": "industry_blog",
+        "exact_quote": "While these characters serve legitimate purposes in text processing and formatting, they can also be weaponized to create a dangerous new class of attacks against LLMs.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "ASCII Smuggler is publicly hosted, encodes/decodes Unicode tag block payloads, and has been used in real-world Copilot exploits. Microsoft's August 2024 patch is the proof-by-impact: a major vendor had to ship a fix because the attack worked in production."
+  },
+  {
+    "claim_id": "UNICODE-10",
+    "claim_text": "Documented LLM jailbreaks and exploits using invisible Unicode include the Microsoft 365 Copilot ASCII Smuggling data exfiltration (disclosed Jan 2024, patched Aug 2024) and Riley Goodside's flag-emoji tag-block GPT-4 demonstrations.",
+    "category": "unicode_attack_literature",
+    "sources": [
+      {
+        "url": "https://thehackernews.com/2024/08/microsoft-fixes-ascii-smuggling-flaw.html",
+        "title": "Microsoft Fixes ASCII Smuggling Flaw That Enabled Data Theft from Microsoft 365 Copilot",
+        "publisher": "The Hacker News",
+        "publish_date": "2024-08-27",
+        "primary": true,
+        "source_type": "industry_news",
+        "exact_quote": "Sensitive data in emails - including multi-factor authentication codes - could be transmitted to adversary-controlled servers through this attack chain.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://embracethered.com/blog/posts/2024/hiding-and-finding-text-with-unicode-tags/",
+        "title": "ASCII Smuggler: GPT-4 / DALL-E proof of concept",
+        "publisher": "Johann Rehberger / Embrace The Red",
+        "publish_date": "2024-01-14",
+        "primary": true,
+        "source_type": "researcher_blog",
+        "exact_quote": "A few days ago Riley Goodside posted about an interesting discovery on how an LLM prompt injection can happen via invisible instructions in pasted text.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "url": "https://languagelog.ldc.upenn.edu/nll/?p=66513",
+        "title": "Invisible text via Unicode tag characters",
+        "publisher": "Language Log (University of Pennsylvania)",
+        "publish_date": "2024-10-15",
+        "primary": true,
+        "source_type": "academic_blog",
+        "exact_quote": "Goodside's initial finding demonstrated how ChatGPT could be manipulated through hidden instructions to invoke DALL-E image creation.",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "INFERENCE_FROM_SUMMARY"
+      },
+      {
+        "url": "https://www.robustintelligence.com/blog-posts/understanding-and-mitigating-unicode-tag-prompt-injection",
+        "title": "Understanding and Mitigating Unicode Tag Prompt Injection",
+        "publisher": "Robust Intelligence (Cisco)",
+        "publish_date": "2024-02-01",
+        "primary": true,
+        "source_type": "industry_research",
+        "exact_quote": "a victim could unknowingly copy and paste an invisible malicious prompt",
+        "accessed_at": "2026-04-26T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": true,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "The Microsoft Copilot case (Rehberger -> MSRC -> Aug 2024 patch) is the strongest 'this attack class shipped real harm' citation. Goodside's GPT-4 flag-emoji demo is the primordial public LLM-tag-injection PoC. The Language Log quote is paraphrased from the source's reporting on Goodside's claim, hence INFERENCE_FROM_SUMMARY."
+  }
+]

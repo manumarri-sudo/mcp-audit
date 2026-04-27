@@ -1,0 +1,166 @@
+[
+  {
+    "claim_id": "SCAN-001",
+    "claim_text": "Between April 24 and 26, 2026, we collected 5,601 MCP server packages from npm, PyPI, and GitHub.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/summary.json",
+        "title": "summary.json from invisible-ink scan",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "\"total_servers_targeted\": 5601",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Per SCHEMA.md exception: numbers from our own scan are primary-sourced from data/summary.json and require only one source. Hash of source file: see data/summary.json directly."
+  },
+  {
+    "claim_id": "SCAN-002",
+    "claim_text": "We installed 2,016 of them inside an isolated Docker container with no environment variables and no credentials.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/summary.json",
+        "title": "summary.json from invisible-ink scan",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "\"total_servers_probed\": 2016",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Own-scan exception per SCHEMA.md."
+  },
+  {
+    "claim_id": "SCAN-003",
+    "claim_text": "911 returned a tool list, yielding 12,739 tool descriptions for analysis.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/summary.json",
+        "title": "summary.json from invisible-ink scan",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "\"total_servers_with_tools\": 911, \"total_tools_analyzed\": 12739",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Own-scan exception per SCHEMA.md."
+  },
+  {
+    "claim_id": "SCAN-004",
+    "claim_text": "Findings plus a 10 percent random control of unflagged descriptions went to Kimi K2.6 (Cloudflare Workers AI) for second-pass classification.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/summary.json",
+        "title": "summary.json from invisible-ink scan",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "\"total_tools_judged_by_kimi\": 1472",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Own-scan exception."
+  },
+  {
+    "claim_id": "SCAN-005",
+    "claim_text": "Zero servers in production carry Unicode tag-block payloads in their tool descriptions today.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/summary.json",
+        "title": "summary.json findings",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "\"servers_with_any_invisible_chars\": 0",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "Own-scan exception. After methodology corrections (variation selector and Cyrillic latin-ratio fixes), the corpus-wide invisible-char count dropped from 20 servers to 0. Documented in HANDOFF.md."
+  },
+  {
+    "claim_id": "SCAN-006",
+    "claim_text": "Seven servers carry visible agent-commandeering imperatives.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://data/eval_report.json",
+        "title": "eval_report.json TRUE_VISIBLE bucket",
+        "publisher": "this scan",
+        "publish_date": "2026-04-24",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "TRUE_VISIBLE 7",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Own-scan exception. The 7 servers are listed in HANDOFF.md and require disclosure-window completion before public naming."
+  },
+  {
+    "claim_id": "SCAN-007",
+    "claim_text": "The detector is a TypeScript port of the Python reference scanner, with 18 vitest cases that mirror the original 23-assertion Python suite.",
+    "category": "scan_primary",
+    "sources": [
+      {
+        "url": "file://lib/detectors.ts",
+        "title": "detectors.ts in mcp-audit repo",
+        "publisher": "this product",
+        "publish_date": "2026-04-27",
+        "primary": true,
+        "source_type": "own_scan",
+        "exact_quote": "TypeScript port of the Python reference implementation",
+        "accessed_at": "2026-04-27T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "Code exception. The implementation is the source of truth."
+  },
+  {
+    "claim_id": "COMP-GRID",
+    "claim_text": "Eleven commercial and open-source MCP scanners survey the space; none perform byte-level Unicode forensics on tool descriptions.",
+    "category": "competitor_grid",
+    "sources": [],
+    "minimum_sources_met": false,
+    "claim_status": "POSITIONING_CELL",
+    "lead_with_this_claim": false,
+    "notes": "Roll-up of the 40 competitor_grid POSITIONING_CELL entries. Resolves to the grid summary at content/sources_v2.summary.md."
+  }
+]
