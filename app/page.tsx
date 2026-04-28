@@ -1,15 +1,22 @@
 import Link from "next/link";
 import { Inspector } from "./components/Inspector";
+import { HeroByteStrip } from "./components/HeroByteStrip";
 
 export default function HomePage() {
   return (
     <main className="container wide">
-      <p className="kicker">MCP supply-chain audit</p>
-      <h1>Your agent reads more than you can see.</h1>
+      <p className="kicker">a 60-second AI security check</p>
+      <h1>Your AI assistant might be following secret instructions.</h1>
       <p className="lede">
-        Paste any tool description below. We show you the visible text, the bytes the
-        model actually reads, and what the agent would do with them.
+        When you connect a new tool to ChatGPT, Claude, Cursor, or any AI assistant, the
+        AI reads a short description first. That description is text. Text can hide
+        instructions you would never see. Pick an example below to watch it happen.
       </p>
+
+      <div className="hero-canvas-wrap">
+        <HeroByteStrip />
+        <span className="hero-canvas-label">bytes flowing through your agent</span>
+      </div>
 
       <Inspector />
 
