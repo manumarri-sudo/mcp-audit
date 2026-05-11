@@ -2,7 +2,7 @@
 
 A 60-second scanner for hidden instructions in MCP tool descriptions. Paste a tool description, get a report on what the AI will actually see versus what you see.
 
-Live: [mcp-audit.vercel.app](https://mcp-audit-3fngrnog5-manumarri-sudos-projects.vercel.app)
+Live: [mcp-audit.vercel.app](https://mcp-audit.vercel.app)
 
 ## Why this exists
 
