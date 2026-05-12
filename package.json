@@ -2,7 +2,7 @@
   "name": "mcp-audit",
   "version": "0.1.0",
   "private": true,
-  "description": "Free 60-second audit of MCP tool descriptions. Detects hidden Unicode, agent commandeering, homoglyphs, encoded payloads.",
+  "description": "Free 60-second audit of MCP tool descriptions. Detects schema mismatch (Tool Poisoning Attack), Line Jumping imperatives, consent bypass, conversation exfiltration, hidden Unicode, agent commandeering, homoglyphs, and encoded payloads.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

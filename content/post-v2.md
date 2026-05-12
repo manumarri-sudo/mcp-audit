@@ -69,3 +69,24 @@ The companion view at `mcp-audit.dev/demo` is a side-by-side diff of what your e
 Tool output sanitization is a known frontier-lab evaluation now. Tool description sanitization is not. The protocol that mediates between them treats the description as a string field with no constraints. [claim:MCP-THREAT-004] Until either the spec adds a content type constraint or every client renders the bytes the model reads (which Anthropic's own Inspector currently does not, by design), the model and the user are looking at different files.
 
 Run an audit on your own setup. If you ship an MCP server, run the audit against your own tool descriptions. If you maintain a registry, run it across your index and publish the diff. The bytes the model reads should match the bytes a reviewer reads. They currently do not have to.
+
+
+---
+
+## May 2026 update: what the rebuilt detector found
+
+This page's primary content is the April 2026 writeup; the scanner you used above ships an updated rule set built against three sources that landed (or that I started taking seriously) after the April scan. [claim:MAY-001] [claim:MAY-002] [claim:MAY-003]
+
+**OWASP Top 10 for Agentic Applications for 2026** was published December 9, 2025, naming ASI01 through ASI10 as the canonical category list, with tool-descriptor poisoning appearing as a sub-pattern under ASI02 (Tool Misuse) and ASI04 (Agentic Supply Chain). [claim:MAY-001]
+
+**Trail of Bits' Line Jumping disclosure** (April 21, 2025) gave the canonical write-up of the pattern where instructions inside a tool description fire the moment your client connects, before any user invocation. [claim:MAY-002]
+
+**Invariant Labs' Tool Poisoning Attack** post (April 1, 2025) documents the schema-mismatch pattern: a description claims a parameter is required when the JSON schema does not require it. This is the canonical "the vendor was bluffing" case. [claim:MAY-003]
+
+**The Vulnerable MCP Project taxonomy** (vulnerablemcp.info) maps community-reported attack patterns to the Cisco AI Security Framework. [claim:MAY-004]
+
+The combined corpus for this rescan is **15,933 tool descriptions across 1,196 unique MCP servers**, the April invisible-ink corpus plus a May Smithery expansion across all 280 published servers with full schema access. [claim:MAY-005]
+
+The new detectors flagged **219 descriptions as strict-bar vulnerabilities** across 150+ named packages, **368 with Line Jumping imperatives**, and **64 canonical schema-mismatch cases** where the description claims a parameter is required and the JSON schema does not. [claim:MAY-006]
+
+The earlier April scan that produced "zero attacks in production" was not wrong about its corpus. It was right about the door it was looking at (hidden Unicode). The attacks it missed were on the next door over: visible imperatives nobody had a reason to read.

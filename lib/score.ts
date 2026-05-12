@@ -16,7 +16,11 @@ export interface ScoreBreakdown {
 }
 
 const HIDDEN_UNICODE_DEDUCTION = 30;
+const SCHEMA_MISMATCH_DEDUCTION = 30;
+const LINE_JUMPING_DEDUCTION = 25;
+const CONSENT_BYPASS_DEDUCTION = 25;
 const COMMANDEERING_DEDUCTION = 20;
+const CONVERSATION_EXFIL_DEDUCTION = 20;
 const HOMOGLYPH_DEDUCTION = 15;
 const ENCODED_PAYLOAD_DEDUCTION = 10;
 const FORWARD_REFERENCE_DEDUCTION = 10;
@@ -35,6 +39,38 @@ export const scoreFinding = (finding: StaticFinding, text = ""): ScoreBreakdown 
       points: HIDDEN_UNICODE_DEDUCTION,
     });
     score -= HIDDEN_UNICODE_DEDUCTION;
+  }
+
+  if (finding.schema_mismatch_fields.length > 0) {
+    deductions.push({
+      reason: `Schema mismatch (description claims ${finding.schema_mismatch_fields.join(", ")} are required; schema does not)`,
+      points: SCHEMA_MISMATCH_DEDUCTION,
+    });
+    score -= SCHEMA_MISMATCH_DEDUCTION;
+  }
+
+  if (finding.line_jumping_signals.length >= 2) {
+    deductions.push({
+      reason: `Line Jumping imperatives (${finding.line_jumping_signals.length} signals)`,
+      points: LINE_JUMPING_DEDUCTION,
+    });
+    score -= LINE_JUMPING_DEDUCTION;
+  }
+
+  if (finding.consent_bypass_signals.length > 0) {
+    deductions.push({
+      reason: `Consent bypass (${finding.consent_bypass_signals.length} signal${finding.consent_bypass_signals.length === 1 ? "" : "s"})`,
+      points: CONSENT_BYPASS_DEDUCTION,
+    });
+    score -= CONSENT_BYPASS_DEDUCTION;
+  }
+
+  if (finding.conversation_exfil_signals.length > 0) {
+    deductions.push({
+      reason: `Conversation / prompt exfiltration (${finding.conversation_exfil_signals.length} signal${finding.conversation_exfil_signals.length === 1 ? "" : "s"})`,
+      points: CONVERSATION_EXFIL_DEDUCTION,
+    });
+    score -= CONVERSATION_EXFIL_DEDUCTION;
   }
 
   if (finding.manipulation_patterns.length >= 2) {

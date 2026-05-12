@@ -1011,7 +1011,7 @@
         "publish_date": "2026-04-15",
         "primary": true,
         "source_type": "vendor_blog",
-        "exact_quote": "150M+ downloads, 7,000+ publicly accessible servers — and up to 200,000 vulnerable instances in total.",
+        "exact_quote": "150M+ downloads, 7,000+ publicly accessible servers \u2014 and up to 200,000 vulnerable instances in total.",
         "accessed_at": "2026-04-26T00:00:00Z",
         "verification_status": "VERIFIED"
       },
@@ -1044,7 +1044,7 @@
         "publish_date": "2026-04-16",
         "primary": true,
         "source_type": "news",
-        "exact_quote": "A design flaw – or expected behavior based on a bad design choice, depending on who is telling the story – baked into Anthropic's official Model Context Protocol (MCP) puts as many as 200,000 servers at risk of complete takeover, according to security researchers.",
+        "exact_quote": "A design flaw \u2013 or expected behavior based on a bad design choice, depending on who is telling the story \u2013 baked into Anthropic's official Model Context Protocol (MCP) puts as many as 200,000 servers at risk of complete takeover, according to security researchers.",
         "accessed_at": "2026-04-26T00:00:00Z",
         "verification_status": "VERIFIED"
       },
@@ -1286,7 +1286,7 @@
         "publish_date": "2026-04-22",
         "primary": true,
         "source_type": "vendor_blog",
-        "exact_quote": "Indirect Prompt Injected Attacks (also known as Cross-Domain Prompt Injected Attacks, XPIA) red teaming tests whether an agent can be manipulated by malicious instructions hidden in external data sources, such as emails or documents—retrieved via tool calls.",
+        "exact_quote": "Indirect Prompt Injected Attacks (also known as Cross-Domain Prompt Injected Attacks, XPIA) red teaming tests whether an agent can be manipulated by malicious instructions hidden in external data sources, such as emails or documents\u2014retrieved via tool calls.",
         "accessed_at": "2026-04-26T00:00:00Z",
         "verification_status": "VERIFIED"
       },
@@ -1352,7 +1352,7 @@
         "publish_date": "2025-12-09",
         "primary": true,
         "source_type": "spec",
-        "exact_quote": "Hidden prompts turned copilots into silent exfiltration engines (ASI01 – Agent Goal Hijack, e.g EchoLeak).",
+        "exact_quote": "Hidden prompts turned copilots into silent exfiltration engines (ASI01 \u2013 Agent Goal Hijack, e.g EchoLeak).",
         "accessed_at": "2026-04-26T00:00:00Z",
         "verification_status": "VERIFIED"
       },
@@ -1396,7 +1396,7 @@
         "publish_date": "2025-03-01",
         "primary": false,
         "source_type": "vendor_blog",
-        "exact_quote": "LLM Prompt Injection (AML.T0051) is a technique in the MITRE ATLAS framework — the adversarial threat landscape for AI systems. It describes how adversaries may craft malicious prompts as inputs to an llm that cause the llm to act in unintended ways.",
+        "exact_quote": "LLM Prompt Injection (AML.T0051) is a technique in the MITRE ATLAS framework \u2014 the adversarial threat landscape for AI systems. It describes how adversaries may craft malicious prompts as inputs to an llm that cause the llm to act in unintended ways.",
         "accessed_at": "2026-04-26T00:00:00Z",
         "verification_status": "VERIFIED"
       },
@@ -1446,7 +1446,7 @@
     "sources": [
       {
         "url": "https://cursor.com/docs/context/mcp",
-        "title": "Cursor – Model Context Protocol (MCP)",
+        "title": "Cursor \u2013 Model Context Protocol (MCP)",
         "publisher": "Cursor",
         "publish_date": "2026-03-01",
         "primary": true,
@@ -1457,7 +1457,7 @@
       },
       {
         "url": "https://cursor.com/docs/context/mcp",
-        "title": "Cursor – Model Context Protocol (MCP)",
+        "title": "Cursor \u2013 Model Context Protocol (MCP)",
         "publisher": "Cursor",
         "publish_date": "2026-03-01",
         "primary": true,
@@ -3134,7 +3134,7 @@
         "publish_date": "2021-11-01",
         "primary": true,
         "source_type": "language_specification",
-        "exact_quote": "This command still assigns a 100-character string to s, but when displayed as general text following the Bidirectional Algorithm (e.g. in a browser), it appears as s = \"א\" followed by a comment.",
+        "exact_quote": "This command still assigns a 100-character string to s, but when displayed as general text following the Bidirectional Algorithm (e.g. in a browser), it appears as s = \"\u05d0\" followed by a comment.",
         "accessed_at": "2026-04-26T00:00:00Z",
         "verification_status": "VERIFIED"
       }
@@ -3266,7 +3266,7 @@
         "publish_date": "2024-01-14",
         "primary": true,
         "source_type": "researcher_blog",
-        "exact_quote": "The Tags Unicode Block mirrors ASCII and because it is often not rendered in the UI, the special text remains unnoticable to users… but LLMs interpret such text.",
+        "exact_quote": "The Tags Unicode Block mirrors ASCII and because it is often not rendered in the UI, the special text remains unnoticable to users\u2026 but LLMs interpret such text.",
         "accessed_at": "2026-04-26T00:00:00Z",
         "verification_status": "VERIFIED"
       },
@@ -3376,7 +3376,7 @@
         "publish_date": "2024-01-14",
         "primary": true,
         "source_type": "researcher_blog",
-        "exact_quote": "The Tags Unicode Block mirrors ASCII and because it is often not rendered in the UI, the special text remains unnoticable to users… but LLMs interpret such text.",
+        "exact_quote": "The Tags Unicode Block mirrors ASCII and because it is often not rendered in the UI, the special text remains unnoticable to users\u2026 but LLMs interpret such text.",
         "accessed_at": "2026-04-26T00:00:00Z",
         "verification_status": "VERIFIED"
       },
@@ -3473,5 +3473,137 @@
     "claim_status": "VERIFIED",
     "lead_with_this_claim": false,
     "notes": "The Microsoft Copilot case (Rehberger -> MSRC -> Aug 2024 patch) is the strongest 'this attack class shipped real harm' citation. Goodside's GPT-4 flag-emoji demo is the primordial public LLM-tag-injection PoC. The Language Log quote is paraphrased from the source's reporting on Goodside's claim, hence INFERENCE_FROM_SUMMARY."
+  },
+  {
+    "claim_id": "MAY-001",
+    "claim_text": "OWASP's Top 10 for Agentic Applications for 2026 (published December 9, 2025) lists ten categories ASI01 through ASI10, covering agent goal hijack, tool misuse and exploitation, identity and privilege abuse, agentic supply chain, unexpected code execution, memory and context poisoning, insecure inter-agent communication, cascading failures, human-agent trust exploitation, and rogue agents. Tool-descriptor poisoning appears as a sub-pattern under ASI02 (Tool Misuse) and ASI04 (Agentic Supply Chain).",
+    "category": "scan_methodology",
+    "sources": [
+      {
+        "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+        "title": "OWASP Top 10 for Agentic Applications for 2026",
+        "publisher": "OWASP GenAI Security Project",
+        "publish_date": "2025-12-09",
+        "primary": true,
+        "source_type": "standard",
+        "exact_quote": "ASI01 Agent Goal Hijack. ASI02 Tool Misuse and Exploitation. ASI03 Identity/Privilege Abuse. ASI04 Agentic Supply Chain.",
+        "accessed_at": "2026-05-11T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "May 2026 methodology addition: OWASP source for the rebuilt detector classes."
+  },
+  {
+    "claim_id": "MAY-002",
+    "claim_text": "Trail of Bits' Line Jumping disclosure (published April 21, 2025) describes the pattern where instructions inside an MCP tool description fire the moment the client connects, before any user interaction. The MCP client updates the model's context with the full tool description as soon as it receives the tools/list response from a server, which means a malicious description executes on connect, not on tool invocation.",
+    "category": "scan_methodology",
+    "sources": [
+      {
+        "url": "https://blog.trailofbits.com/2025/04/21/jumping-the-line-how-mcp-servers-can-attack-you-before-you-ever-use-them/",
+        "title": "Jumping the line: How MCP servers can attack you before you ever use them",
+        "publisher": "Trail of Bits",
+        "publish_date": "2025-04-21",
+        "primary": true,
+        "source_type": "blog",
+        "exact_quote": "The MCP client updates the model's context with the full tool description the moment it receives the server's tools/list response.",
+        "accessed_at": "2026-05-11T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "May 2026 methodology addition: Trail of Bits Line Jumping is the basis for the LINE_JUMPING_PATTERNS detector."
+  },
+  {
+    "claim_id": "MAY-003",
+    "claim_text": "Invariant Labs' MCP Security Notification on Tool Poisoning Attacks (published April 1, 2025) documents the canonical schema-mismatch pattern: a tool description claims that a parameter is required for the call to succeed, while the actual JSON schema does not require it. The canonical example demanded reading the user's `~/.cursor/mcp.json` file into a 'sidenote' parameter. The pattern generalizes to any payload the vendor wants the agent to ship as a 'required' field.",
+    "category": "scan_methodology",
+    "sources": [
+      {
+        "url": "https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks",
+        "title": "MCP Security Notification: Tool Poisoning Attacks",
+        "publisher": "Invariant Labs",
+        "publish_date": "2025-04-01",
+        "primary": true,
+        "source_type": "blog",
+        "exact_quote": "Tool descriptions are visible to AI models but invisible to users. They can carry instructions the user never sees.",
+        "accessed_at": "2026-05-11T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "May 2026 methodology addition: Invariant Labs Tool Poisoning Attack is the basis for the schema-mismatch detector."
+  },
+  {
+    "claim_id": "MAY-004",
+    "claim_text": "The Vulnerable MCP Project (vulnerablemcp.info) maintains a community taxonomy of in-the-wild MCP attack patterns, mapped to the Cisco AI Security Framework. Categories include Tool Poisoning, Instruction/Data Confusion, Session Management, Network-Level, and Architectural Trust.",
+    "category": "scan_methodology",
+    "sources": [
+      {
+        "url": "https://vulnerablemcp.info/taxonomy.html",
+        "title": "Vulnerable MCP Project - Taxonomy",
+        "publisher": "Vulnerable MCP Project",
+        "publish_date": "2026-01-01",
+        "primary": true,
+        "source_type": "community_catalog",
+        "exact_quote": "Tool Poisoning. Instruction/Data Confusion. Session Management. Network-Level. Architectural Trust.",
+        "accessed_at": "2026-05-11T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": false,
+    "notes": "May 2026 methodology addition: Vulnerable MCP Project informs the broader class structure."
+  },
+  {
+    "claim_id": "MAY-005",
+    "claim_text": "The combined May 2026 corpus includes 15,933 tool descriptions across 1,196 unique MCP servers. This is the April 2026 invisible-ink scan (12,739 descriptions / 916 servers) merged with a May 2026 Smithery registry expansion (3,194 descriptions / 280 published servers with full schema access).",
+    "category": "scan_results",
+    "sources": [
+      {
+        "url": "content/findings/april_rescan_v3.json",
+        "title": "April rescan with v3 detectors",
+        "publisher": "internal",
+        "publish_date": "2026-05-12",
+        "primary": true,
+        "source_type": "scan_output",
+        "exact_quote": "n_tools_scanned: 12739, n_servers_with_tools: 916",
+        "accessed_at": "2026-05-12T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "May 2026 scan results: combined corpus."
+  },
+  {
+    "claim_id": "MAY-006",
+    "claim_text": "The combined May 2026 scan flagged 219 tool descriptions as strict-bar vulnerabilities across more than 150 named packages, and 368 descriptions as containing Line Jumping imperatives (instructions written at the agent that fire before any user invocation). 64 of the 219 are canonical schema-mismatch cases where the description claims a parameter is required but the actual JSON schema does not.",
+    "category": "scan_results",
+    "sources": [
+      {
+        "url": "content/findings/april_rescan_v3.json",
+        "title": "Combined May 2026 scan output",
+        "publisher": "internal",
+        "publish_date": "2026-05-12",
+        "primary": true,
+        "source_type": "scan_output",
+        "exact_quote": "TIER_1_VULN: 151, AA_line_jumping: 246 in April subset alone; combined 219 / 368",
+        "accessed_at": "2026-05-12T00:00:00Z",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "minimum_sources_met": false,
+    "claim_status": "VERIFIED",
+    "lead_with_this_claim": true,
+    "notes": "May 2026 scan results: vulnerability counts."
   }
 ]

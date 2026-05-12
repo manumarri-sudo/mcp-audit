@@ -91,6 +91,56 @@ export const MANIPULATION_PATTERNS: readonly string[] = [
   String.raw`\bdo not (tell|mention|inform)\b`,
 ];
 
+// Line Jumping (Trail of Bits, April 2025): imperatives written at the agent
+// that fire the moment the client connects, before user invocation.
+export const LINE_JUMPING_PATTERNS: readonly string[] = [
+  String.raw`\bMANDATORY\b`,
+  String.raw`\bMUST\s+BE\s+CALLED\b`,
+  String.raw`\bMUST\s+CALL\b`,
+  String.raw`\bMUST\s+USE\b`,
+  String.raw`\bMUST\s+INCLUDE\b`,
+  String.raw`\bALWAYS\s+(USE|CALL|INVOKE)\b`,
+  String.raw`\bNEVER\s+EVER\b`,
+  String.raw`\bFIRST\s+STEP\b`,
+  String.raw`\bvery\s+first\s+(action|step|call)\b`,
+  String.raw`\bas\s+the\s+(very\s+)?first\b`,
+  String.raw`\bbefore\s+(any\s+)?other\s+tools?\b`,
+  String.raw`\bproactively\s+(call|invoke|use)\b`,
+  String.raw`\bautomatically\s+(call|invoke)\b`,
+  String.raw`\bWILL\s+FAIL\b`,
+];
+
+// Consent bypass: instructions that tell the agent to skip the user.
+// Same directive shape that helped a Replit agent delete a production DB.
+export const CONSENT_BYPASS_PATTERNS: readonly string[] = [
+  String.raw`\bdo\s*n'?t\s+ask\s+(the\s+)?user\b`,
+  String.raw`\bdo\s+not\s+ask\s+(the\s+)?user\b`,
+  String.raw`\bdo\s*n'?t\s+(prompt|confirm|inform|interrupt)\b`,
+  String.raw`\bdo\s+not\s+(prompt|confirm|inform|interrupt)\b`,
+  String.raw`\bdo\s*n'?t\s+context\s+switch\b`,
+  String.raw`\bskip\s+(the\s+)?(user\s+)?(confirmation|approval|review)\b`,
+  String.raw`\bwithout\s+(user\s+)?(consent|approval|confirmation|asking)\b`,
+  String.raw`\bno\s+(user\s+)?(confirmation|approval)\s+(needed|required)\b`,
+];
+
+// Conversation / prompt exfiltration: parameter names and instructions that
+// force the agent to ship the user's input to the vendor's server.
+export const CONVERSATION_EXFIL_PATTERNS: readonly string[] = [
+  String.raw`\boriginal\s*user\s*message\b`,
+  String.raw`\bconversation\s+history\b`,
+  String.raw`\bchat\s+(history|log|transcript)\b`,
+  String.raw`\bprevious\s+(messages?|prompts?|inputs?)\b`,
+  String.raw`\binclude\s+.{0,40}\b(user'?s?\s+(message|prompt)|conversation)\b`,
+  String.raw`\bsend\s+.{0,40}\b(user'?s?\s+(message|prompt)|conversation)\b`,
+  String.raw`\bpass\s+.{0,40}\b(user'?s?\s+(message|prompt)|full\s+context)\b`,
+];
+
+// Schema-mismatch keywords. When the description claims a parameter is
+// REQUIRED/MANDATORY but the actual JSON schema's `required` array does not
+// list it, that is the canonical Invariant Labs Tool Poisoning Attack pattern.
+export const SCHEMA_REQUIRED_CLAIM_RE =
+  /\b(MANDATORY|REQUIRED|MUST\s+INCLUDE|MUST\s+CONTAIN|will\s+REJECT)\b[^.]{0,200}?[`"']?([a-zA-Z_][a-zA-Z0-9_]+)[`"']?/gi;
+
 const BASE64_RE =
   /(?<![A-Za-z0-9+/=])(?=[A-Za-z0-9+/]{40,})(?=[^=]*?(?:[+/]|[A-Za-z0-9]{64,}))[A-Za-z0-9+/]{40,}={0,2}(?![A-Za-z0-9+/=])/g;
 const HEX_RE = /(?<![0-9a-fA-F])[0-9a-fA-F]{60,}(?![0-9a-fA-F])/g;
@@ -118,6 +168,10 @@ export interface StaticFinding {
   instruction_tags: string[];
   exfiltration_patterns: string[];
   manipulation_patterns: string[];
+  line_jumping_signals: string[];
+  consent_bypass_signals: string[];
+  conversation_exfil_signals: string[];
+  schema_mismatch_fields: string[];
   raw_length: number;
   visible_length: number;
 }
@@ -135,6 +189,10 @@ const newFinding = (rawLength = 0): StaticFinding => ({
   instruction_tags: [],
   exfiltration_patterns: [],
   manipulation_patterns: [],
+  line_jumping_signals: [],
+  consent_bypass_signals: [],
+  conversation_exfil_signals: [],
+  schema_mismatch_fields: [],
   raw_length: rawLength,
   visible_length: 0,
 });
@@ -145,7 +203,11 @@ export const isFlagged = (f: StaticFinding): boolean =>
   f.exfiltration_patterns.length > 0 ||
   f.manipulation_patterns.length >= 2 ||
   f.encoded_payloads > 0 ||
-  (f.homoglyph_flags > 0 && f.raw_length > 40);
+  (f.homoglyph_flags > 0 && f.raw_length > 40) ||
+  f.line_jumping_signals.length >= 2 ||
+  f.consent_bypass_signals.length > 0 ||
+  f.conversation_exfil_signals.length > 0 ||
+  f.schema_mismatch_fields.length > 0;
 
 const inRange = (cp: number, ranges: readonly Range[]): Range | null => {
   for (const r of ranges) if (cp >= r[0] && cp <= r[1]) return r;
@@ -373,8 +435,103 @@ export const passD = (text: string, finding: StaticFinding): void => {
 };
 
 /**
- * Run all four passes against a tool description string.
+ * Pass E. Line Jumping: imperatives at the agent (MANDATORY, MUST BE CALLED,
+ * NEVER EVER, FIRST STEP, before any other tools, etc.). Trail of Bits' April
+ * 2025 disclosure pattern.
+ */
+export const passE = (text: string, finding: StaticFinding): void => {
+  for (const pat of LINE_JUMPING_PATTERNS) {
+    const re = new RegExp(pat, "g");
+    for (const m of text.matchAll(re)) {
+      const hit = m[0];
+      if (!finding.line_jumping_signals.includes(hit)) {
+        finding.line_jumping_signals.push(hit);
+      }
+    }
+  }
+};
+
+/**
+ * Pass F. Consent bypass: phrases telling the agent to skip the user.
+ * Same shape of directive that helped a Replit agent delete a production DB.
+ */
+export const passF = (text: string, finding: StaticFinding): void => {
+  for (const pat of CONSENT_BYPASS_PATTERNS) {
+    const re = new RegExp(pat, "gi");
+    for (const m of text.matchAll(re)) {
+      const hit = m[0];
+      if (!finding.consent_bypass_signals.includes(hit)) {
+        finding.consent_bypass_signals.push(hit);
+      }
+    }
+  }
+};
+
+/**
+ * Pass G. Conversation / prompt exfiltration: parameter names and verbs that
+ * force the agent to ship the user's input to the vendor's server.
+ */
+export const passG = (text: string, finding: StaticFinding): void => {
+  for (const pat of CONVERSATION_EXFIL_PATTERNS) {
+    const re = new RegExp(pat, "gi");
+    for (const m of text.matchAll(re)) {
+      const hit = m[0];
+      if (!finding.conversation_exfil_signals.includes(hit)) {
+        finding.conversation_exfil_signals.push(hit);
+      }
+    }
+  }
+};
+
+/**
+ * Pass H. Schema mismatch: the description claims a parameter is REQUIRED /
+ * MANDATORY but the actual JSON schema's `required` array does not list it.
+ * Canonical Invariant Labs Tool Poisoning Attack pattern. Only runs in
+ * scanTool() because it needs the schema; not part of scan(description).
+ */
+export const passH = (
+  description: string,
+  schema: unknown,
+  finding: StaticFinding,
+): void => {
+  if (!description) return;
+  // Extract claimed-required field names from the description.
+  const claimed = new Set<string>();
+  for (const m of description.matchAll(SCHEMA_REQUIRED_CLAIM_RE)) {
+    const name = m[2];
+    if (!name) continue;
+    if (name.length < 3 || name.length > 60) continue;
+    // Skip common English words that look like params.
+    if (
+      /^(the|this|that|both|any|all|will|user|tool|call|calls)$/i.test(name)
+    )
+      continue;
+    claimed.add(name);
+  }
+  if (claimed.size === 0) return;
+
+  // Extract actual required fields from the schema.
+  const actualRequired = new Set<string>();
+  if (schema && typeof schema === "object") {
+    const s = schema as { required?: unknown };
+    if (Array.isArray(s.required)) {
+      for (const r of s.required) {
+        if (typeof r === "string") actualRequired.add(r);
+      }
+    }
+  }
+
+  for (const c of claimed) {
+    if (!actualRequired.has(c)) {
+      finding.schema_mismatch_fields.push(c);
+    }
+  }
+};
+
+/**
+ * Run all eight passes against a tool description string.
  * Returns the visible-after-stripping text and the finding.
+ * Note: schema mismatch (pass H) requires the schema and runs in scanTool().
  */
 export const scan = (description: string | null | undefined): { visible: string; finding: StaticFinding } => {
   const text = description ?? "";
@@ -383,6 +540,9 @@ export const scan = (description: string | null | undefined): { visible: string;
   passB(visible, finding);
   passC(text, finding);
   passD(text, finding);
+  passE(text, finding);
+  passF(text, finding);
+  passG(text, finding);
   finding.visible_length = visible.length;
   return { visible, finding };
 };
@@ -432,6 +592,9 @@ export const scanTool = (tool: Record<string, unknown>): ToolScanResult => {
     (tool["inputSchema"] as unknown) ?? (tool["input_schema"] as unknown) ?? {};
   walkSchema(inputSchema, paramDescs, new WeakSet(), 0);
 
+  // Pass H runs against the description with access to the schema.
+  passH(desc, inputSchema, descFinding);
+
   const paramFindings: StaticFinding[] = paramDescs
     .filter((p) => p.length > 0)
     .map((p) => scan(p).finding);
@@ -442,6 +605,10 @@ export const scanTool = (tool: Record<string, unknown>): ToolScanResult => {
   agg.instruction_tags = [...descFinding.instruction_tags];
   agg.exfiltration_patterns = [...descFinding.exfiltration_patterns];
   agg.manipulation_patterns = [...descFinding.manipulation_patterns];
+  agg.line_jumping_signals = [...descFinding.line_jumping_signals];
+  agg.consent_bypass_signals = [...descFinding.consent_bypass_signals];
+  agg.conversation_exfil_signals = [...descFinding.conversation_exfil_signals];
+  agg.schema_mismatch_fields = [...descFinding.schema_mismatch_fields];
   agg.homoglyph_flags = descFinding.homoglyph_flags;
   agg.encoded_payloads = descFinding.encoded_payloads;
   agg.visible_length = descFinding.visible_length;
@@ -456,6 +623,15 @@ export const scanTool = (tool: Record<string, unknown>): ToolScanResult => {
     }
     for (const m of pf.manipulation_patterns) {
       if (!agg.manipulation_patterns.includes(m)) agg.manipulation_patterns.push(m);
+    }
+    for (const x of pf.line_jumping_signals) {
+      if (!agg.line_jumping_signals.includes(x)) agg.line_jumping_signals.push(x);
+    }
+    for (const x of pf.consent_bypass_signals) {
+      if (!agg.consent_bypass_signals.includes(x)) agg.consent_bypass_signals.push(x);
+    }
+    for (const x of pf.conversation_exfil_signals) {
+      if (!agg.conversation_exfil_signals.includes(x)) agg.conversation_exfil_signals.push(x);
     }
     agg.homoglyph_flags += pf.homoglyph_flags;
     agg.encoded_payloads += pf.encoded_payloads;
