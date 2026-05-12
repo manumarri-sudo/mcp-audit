@@ -9,11 +9,11 @@
   --border: #e8e0cb;
   --border-strong: #d8cfb6;
 
-  --accent: #d62c6e;
-  --accent-soft: rgba(214, 44, 110, 0.1);
-  --accent-line: rgba(214, 44, 110, 0.3);
-  --accent-glow: rgba(214, 44, 110, 0.25);
-  --accent-deep: #a91d54;
+  --accent: #d97757;
+  --accent-soft: rgba(217, 119, 87, 0.10);
+  --accent-line: rgba(217, 119, 87, 0.28);
+  --accent-glow: rgba(217, 119, 87, 0.18);
+  --accent-deep: #bb5c2e;
 
   --warn: #c87613;
   --ok: #2f8a52;
@@ -44,8 +44,8 @@ html, body {
 
 body {
   background-image:
-    radial-gradient(1100px 600px at 8% -8%, rgba(214, 44, 110, 0.06), transparent 60%),
-    radial-gradient(900px 500px at 100% 0%, rgba(214, 44, 110, 0.03), transparent 55%);
+    radial-gradient(1100px 600px at 8% -8%, rgba(217, 119, 87, 0.05), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(217, 119, 87, 0.025), transparent 55%);
   min-height: 100vh;
 }
 
@@ -866,4 +866,22 @@ details summary {
 
 details summary::marker {
   color: var(--accent);
+}
+
+/* Real-quote: the verbatim attack snippet on the homepage. */
+.real-quote {
+  margin: 1.4rem 0 1.6rem;
+  padding: 1.2rem 1.6rem;
+  background: var(--bg-card);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--fg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.real-quote em {
+  font-style: normal;
 }
