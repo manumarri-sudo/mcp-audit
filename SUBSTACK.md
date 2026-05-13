@@ -18,7 +18,7 @@ The data behind the deck is real too. HubSpot's Spring 2026 Spotlight reports AI
 
 There is a second GEO conversation happening at the same time, and almost nobody in marketing is in the room.
 
-The second conversation is not about getting your blog cited when a user asks ChatGPT a question. It is about getting your *tool* picked when ChatGPT's agent decides which action to take. Floridi, Cowls, and colleagues at Yale and Oxford put a name to it in April 2026 with their arXiv paper *Agentic AI Optimisation (AAIO)*, which makes the SEO analogy explicit for agents and lays out the academic framing for the discipline. They were right about the shape of the problem. What they did not have, and what I am publishing today, is the empirical proof that the channel is already being colonized, at scale, in production, by named vendors competing for the AI's attention the way websites in 2003 competed for Google's, except this time in a field humans were never going to read.
+The second conversation is not about getting your blog cited when a user asks ChatGPT a question, it is about getting your *tool* picked when ChatGPT's agent decides which action to take. Luciano Floridi and co-authors at Yale and Oxford put a name to it in April 2025 with their arXiv paper *Agentic AI Optimisation (AAIO)*, which makes the SEO analogy explicit for agents and lays out the academic framing for the discipline. They were right about the shape of the problem, and what they did not have, and what I am publishing today, is the empirical proof that the channel is already being colonized, at scale, in production, by named vendors competing for the AI's attention the way websites in 2003 competed for Google's, except this time in a field humans were never going to read.
 
 Call it Agent GEO. Call it protocol-layer SEO. Call it tool-description SEO. The name matters less than the mechanism, which is the part everyone underestimates.
 
@@ -110,7 +110,7 @@ If you ship in this ecosystem and you want the catalog scanned before your custo
 - OneLittleWeb chatbot share ~3% of info traffic: [secondary-inferred] (Search Engine Journal coverage of OneLittleWeb)
 - Profound: Reddit 46.7% of Perplexity top-10 citations, ~2x Wikipedia: [secondary-inferred] (Profound AI Citation Patterns)
 - Brandlight: 54% of AI-Mode citations overlap with Google Top-10: [primary-verified] (Brandlight study)
-- Floridi et al. *Agentic AI Optimisation (AAIO)* arXiv 2504.12482, April 2026, Yale/Oxford: [primary-verified] (arXiv 2504.12482)
+- Floridi et al. *Agentic AI Optimisation (AAIO)* arXiv 2504.12482, submitted April 18, 2025, Yale/Oxford (revised version forthcoming in Minds and Machines, 2026): [primary-verified] (arXiv 2504.12482)
 - Anthropic MCP donated to Linux Foundation Dec 9 2025, 10,000+ active public servers, 97M+ monthly SDK downloads: [primary-verified] (Linux Foundation announcement)
 - Shopify dev MCP "MANDATORY VALIDATION TOOL ... DONT ASK THE USER" verbatim: [primary-verified] (Manu's scan, `SUBSTACK_DRAFT.md` line 90)
 - ~1.7 million Shopify merchants downstream: [secondary-inferred] (Shopify investor reporting via `SUBSTACK_DRAFT.md` line 158)

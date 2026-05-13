@@ -28,7 +28,7 @@ Open-source scanner (26 detection classes, MIT): github.com/manumarri-sudo/skill
 Runtime gate that judges every tool call against user intent: github.com/manumarri-sudo/adjudicator
 Live single-tool scanner: loomiq.llc/projects/mcp-audit
 
-Floridi, Cowls et al. at Yale and Oxford named the academic version of this in April 2026: *Agentic AI Optimisation* (arXiv 2504.12482). The post above is the empirical version shipping in public registries today.
+Floridi et al. at Yale and Oxford named the academic version of this in April 2025: *Agentic AI Optimisation* (arXiv 2504.12482). The post above is the empirical version shipping in public registries today.
 
 If you ship MCP servers, agent tools, or Claude Code skills and want the catalog audited before customers do, message me.
 
@@ -54,5 +54,5 @@ If you ship MCP servers, agent tools, or Claude Code skills and want the catalog
 - "One calls itself the agent's *subconscious*": [primary-verified] (Memento finding, `SUBSTACK_DRAFT.md` line 128)
 - "Freud would have words": [my framing]
 - "the two GEO conversations" / "what decides what your agent actually does": [my framing]
-- Floridi et al. *Agentic AI Optimisation* arXiv 2504.12482, April 2026: [primary-verified] (arXiv 2504.12482)
+- Floridi et al. *Agentic AI Optimisation* arXiv 2504.12482, submitted April 18, 2025 (revised version forthcoming in Minds and Machines, 2026): [primary-verified] (arXiv 2504.12482)
 - Scanner / adjudicator / mcp-audit URLs: [primary-verified] (Manu's public repos)
