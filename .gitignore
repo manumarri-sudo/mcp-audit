@@ -11,3 +11,7 @@ dist
 coverage
 .turbo
 .vercel
+
+# generated PDFs of the launch posts (re-render from .md as needed)
+SUBSTACK.pdf
+LINKEDIN.pdf

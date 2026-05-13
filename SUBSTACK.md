@@ -50,6 +50,8 @@ Trail of Bits published the correct name for this attack class on April 21, 2025
 
 Three weeks ago I rescanned the public MCP ecosystem against the current threat model. The corpus: about 6,000 MCP servers targeted across npm, PyPI, GitHub, and Smithery's registry. 1,196 of them opened up enough for the scanner to actually inspect their tool descriptions. 15,933 descriptions with full schema access.
 
+That 1,196 / 15,933 is the union of two scans: an April pass against the public MCP registries (5,601 servers targeted, 916 returning a usable `tools/list`, 12,739 tool descriptions), plus a May expansion that pulled the full 280 published servers from Smithery's registry and added 3,194 more descriptions with schema. The two halves do not overlap on the server side, so the combined corpus is 916 + 280 = 1,196 unique servers and 12,739 + 3,194 = 15,933 tool descriptions.
+
 The findings:
 
 - **219 strict-bar vulnerabilities** (real security problems, not "could maybe be misused")
